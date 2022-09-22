@@ -26,6 +26,9 @@ super + s
 super + x
 	goldendict
 
+super + n
+	feh --bg-fill --randomize --no-fehbg ~/Pictures/wallpaper/*
+
 # Screenshot Area
 Print
   flameshot gui

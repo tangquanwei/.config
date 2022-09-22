@@ -3,18 +3,19 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 # polybar
-killall -q polybar
-polybar -q &
+polybar &
 
 # feh
-feh --bg-fill ~/.wallpapers/tokyo.png
+feh --bg-fill --randomize --no-fehbg ~/Pictures/wallpaper/*
 
 # picom
-killall -q picom
 picom &
 
+# redshift
+redshift &
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+
+bspc monitor -d I II III IV V 
 
 bspc config border_width         0
 bspc config window_gap           10
