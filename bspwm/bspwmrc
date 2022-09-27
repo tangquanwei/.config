@@ -1,16 +1,15 @@
 #! /bin/sh
 
+# sxhkd
 pgrep -x sxhkd > /dev/null || sxhkd &
-
+# eww
+eww daemon &
 # polybar
 polybar &
-
 # feh
 feh --bg-fill --randomize --no-fehbg ~/Pictures/wallpaper/*
-
 # picom
 picom &
-
 # redshift
 redshift &
 
@@ -21,9 +20,9 @@ bspc config border_width         0
 bspc config window_gap           10
 bspc config border_radius	       15
 
-bspc config normal_border_color \#c0caf5
-bspc config active_border_color \#c0caf5
-bspc config focused_border_color \#c0caf5
+bspc config normal_border_color   \#c0caf5
+bspc config active_border_color   \#c0caf5
+bspc config focused_border_color  \#c0caf5
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
@@ -32,6 +31,7 @@ bspc config gapless_monocle      true
 bspc rule -a Goldendict state=floating
 bspc rule -a Rofi state=floating
 bspc rule -a Nautilus state=floating
+
 # fish
 # set -U SXHKD_SHELL /user/bin/bash
 

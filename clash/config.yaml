@@ -1,0 +1,2156 @@
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+allow-lan: false
+mode: Rule
+log-level: info
+ipv6: false
+hosts:
+  services.googleapis.cn: 216.58.200.67
+  www.google.cn: 216.58.200.67
+external-controller: 0.0.0.0:9090
+clash-for-android:
+  append-system-dns: false
+profile:
+  tracing: true
+dns:
+  enable: true
+  listen: 127.0.0.1:8853
+  default-nameserver:
+    - 223.5.5.5
+    - 1.0.0.1
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+    - "*.lan"
+    - stun.*.*.*
+    - stun.*.*
+    - time.windows.com
+    - time.nist.gov
+    - time.apple.com
+    - time.asia.apple.com
+    - "*.ntp.org.cn"
+    - "*.openwrt.pool.ntp.org"
+    - time1.cloud.tencent.com
+    - time.ustc.edu.cn
+    - pool.ntp.org
+    - ntp.ubuntu.com
+    - ntp.aliyun.com
+    - ntp1.aliyun.com
+    - ntp2.aliyun.com
+    - ntp3.aliyun.com
+    - ntp4.aliyun.com
+    - ntp5.aliyun.com
+    - ntp6.aliyun.com
+    - ntp7.aliyun.com
+    - time1.aliyun.com
+    - time2.aliyun.com
+    - time3.aliyun.com
+    - time4.aliyun.com
+    - time5.aliyun.com
+    - time6.aliyun.com
+    - time7.aliyun.com
+    - "*.time.edu.cn"
+    - time1.apple.com
+    - time2.apple.com
+    - time3.apple.com
+    - time4.apple.com
+    - time5.apple.com
+    - time6.apple.com
+    - time7.apple.com
+    - time1.google.com
+    - time2.google.com
+    - time3.google.com
+    - time4.google.com
+    - music.163.com
+    - "*.music.163.com"
+    - "*.126.net"
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - "*.kuwo.cn"
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - y.qq.com
+    - "*.y.qq.com"
+    - streamoc.music.tc.qq.com
+    - mobileoc.music.tc.qq.com
+    - isure.stream.qqmusic.qq.com
+    - dl.stream.qqmusic.qq.com
+    - aqqmusic.tc.qq.com
+    - amobile.music.tc.qq.com
+    - "*.xiami.com"
+    - "*.music.migu.cn"
+    - music.migu.cn
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+    - "*.*.*.srv.nintendo.net"
+    - "*.*.stun.playstation.net"
+    - xbox.*.*.microsoft.com
+    - "*.ipv6.microsoft.com"
+    - "*.*.xboxlive.com"
+    - speedtest.cros.wr.pvp.net
+  nameserver:
+    - https://223.6.6.6/dns-query
+    - https://rubyfish.cn/dns-query
+    - https://dns.pub/dns-query
+  fallback:
+    - https://dns.rubyfish.cn/dns-query
+    - https://public.dns.iij.jp/dns-query
+    - tls://8.8.4.4
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+      - 127.0.0.1/32
+    domain:
+      - +.google.com
+      - +.facebook.com
+      - +.twitter.com
+      - +.youtube.com
+      - +.xn--ngstr-lra8j.com
+      - +.google.cn
+      - +.googleapis.cn
+      - +.googleapis.com
+      - +.gvt1.com
+proxies:
+  - name: jiamov.com
+    type: ss
+    server: 211.99.114.119
+    port: 15003
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 小江Jiamov
+    type: ss
+    server: 211.99.114.119
+    port: 15003
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: Tg：bailuuo
+    type: ss
+    server: 211.99.114.119
+    port: 15003
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇭🇰 Hong Kong 01
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 15003
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇭🇰 Hong Kong 02
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 15006
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇭🇰 Hong Kong 03
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 15009
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇭🇰 Hong Kong 04
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 15013
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇭🇰 Hong Kong 05
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 15016
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇭🇰 Hong Kong 06
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 15019
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇭🇰 Hong Kong 07
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 15023
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇭🇰 Hong Kong 08
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 15026
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇭🇰 Hong Kong 09
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 15029
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇭🇰 Hong Kong 10
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 15033
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇭🇰 Hong Kong 11
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 15036
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇭🇰 Hong Kong 12
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 15039
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇭🇰 Hong Kong 13
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 15043
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇭🇰 Hong Kong 14
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 15046
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇭🇰 Hong Kong 15
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 15049
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇸🇬 Singapore 01
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 18803
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇸🇬 Singapore 02
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 18806
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇸🇬 Singapore 03
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 18809
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇸🇬 Singapore 04
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 18813
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇸🇬 Singapore 05
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 18816
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇸🇬 Singapore 06
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 18819
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇸🇬 Singapore 07
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 18823
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇸🇬 Singapore 08
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 18826
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇸🇬 Singapore 09
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 18829
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇸🇬 Singapore 10
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 18833
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇸🇬 Singapore 11
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 18836
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇸🇬 Singapore 12
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 18839
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇸🇬 Singapore 13
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 18843
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇯🇵 Japan 01
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 17003
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇯🇵 Japan 02
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 17006
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇯🇵 Japan 03
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 17009
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇯🇵 Japan 04
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 17013
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇯🇵 Japan 05
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 17016
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇯🇵 Japan 06
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 17019
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇯🇵 Japan 07
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 17023
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇯🇵 Japan 08
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 17026
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇯🇵 Japan 09
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 17029
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇯🇵 Japan 10
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 17033
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇯🇵 Japan 11
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 17036
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇯🇵 Japan 12
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 17039
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇯🇵 Japan 13
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 17043
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇯🇵 Japan 14
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 17046
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇯🇵 Japan 15
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 17049
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇺🇸 United States 01
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 16003
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇺🇸 United States 02
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 16006
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇺🇸 United States 03
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 16009
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇺🇸 United States 04
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 16013
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇺🇸 United States 05
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 16016
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇺🇸 United States 06
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 16019
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇺🇸 United States 07
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 16023
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇺🇸 United States 08
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 16026
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇺🇸 United States 09
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 16029
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇺🇸 United States 10
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 16033
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇺🇸 United States 11
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 16036
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇺🇸 United States 12
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 16039
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇺🇸 United States 13
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 16043
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇺🇸 United States 14
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 16046
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇺🇸 United States 15
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 16049
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇨🇳 Taiwan 01
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 19003
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+  - name: 🇨🇳 Taiwan 02
+    type: ss
+    server: ntded7zt.jrqiuq.sbs
+    port: 19006
+    cipher: aes-128-gcm
+    password: LirckoyaaFDR_dv7f5upL
+    udp: true
+proxy-groups:
+  - name: 小江欧巴
+    type: select
+    proxies:
+      - jiamov.com
+      - 小江Jiamov
+      - Tg：bailuuo
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 02
+      - 🇭🇰 Hong Kong 03
+      - 🇭🇰 Hong Kong 04
+      - 🇭🇰 Hong Kong 05
+      - 🇭🇰 Hong Kong 06
+      - 🇭🇰 Hong Kong 07
+      - 🇭🇰 Hong Kong 08
+      - 🇭🇰 Hong Kong 09
+      - 🇭🇰 Hong Kong 10
+      - 🇭🇰 Hong Kong 11
+      - 🇭🇰 Hong Kong 12
+      - 🇭🇰 Hong Kong 13
+      - 🇭🇰 Hong Kong 14
+      - 🇭🇰 Hong Kong 15
+      - 🇸🇬 Singapore 01
+      - 🇸🇬 Singapore 02
+      - 🇸🇬 Singapore 03
+      - 🇸🇬 Singapore 04
+      - 🇸🇬 Singapore 05
+      - 🇸🇬 Singapore 06
+      - 🇸🇬 Singapore 07
+      - 🇸🇬 Singapore 08
+      - 🇸🇬 Singapore 09
+      - 🇸🇬 Singapore 10
+      - 🇸🇬 Singapore 11
+      - 🇸🇬 Singapore 12
+      - 🇸🇬 Singapore 13
+      - 🇯🇵 Japan 01
+      - 🇯🇵 Japan 02
+      - 🇯🇵 Japan 03
+      - 🇯🇵 Japan 04
+      - 🇯🇵 Japan 05
+      - 🇯🇵 Japan 06
+      - 🇯🇵 Japan 07
+      - 🇯🇵 Japan 08
+      - 🇯🇵 Japan 09
+      - 🇯🇵 Japan 10
+      - 🇯🇵 Japan 11
+      - 🇯🇵 Japan 12
+      - 🇯🇵 Japan 13
+      - 🇯🇵 Japan 14
+      - 🇯🇵 Japan 15
+      - 🇺🇸 United States 01
+      - 🇺🇸 United States 02
+      - 🇺🇸 United States 03
+      - 🇺🇸 United States 04
+      - 🇺🇸 United States 05
+      - 🇺🇸 United States 06
+      - 🇺🇸 United States 07
+      - 🇺🇸 United States 08
+      - 🇺🇸 United States 09
+      - 🇺🇸 United States 10
+      - 🇺🇸 United States 11
+      - 🇺🇸 United States 12
+      - 🇺🇸 United States 13
+      - 🇺🇸 United States 14
+      - 🇺🇸 United States 15
+      - 🇨🇳 Taiwan 01
+      - 🇨🇳 Taiwan 02
+  - name: 🍎 Apple
+    type: select
+    proxies:
+      - 小江欧巴
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 02
+      - 🇭🇰 Hong Kong 03
+      - 🇭🇰 Hong Kong 04
+      - 🇭🇰 Hong Kong 05
+      - 🇭🇰 Hong Kong 06
+      - 🇭🇰 Hong Kong 07
+      - 🇭🇰 Hong Kong 08
+      - 🇭🇰 Hong Kong 09
+      - 🇭🇰 Hong Kong 10
+      - 🇭🇰 Hong Kong 11
+      - 🇭🇰 Hong Kong 12
+      - 🇭🇰 Hong Kong 13
+      - 🇭🇰 Hong Kong 14
+      - 🇭🇰 Hong Kong 15
+      - 🇸🇬 Singapore 01
+      - 🇸🇬 Singapore 02
+      - 🇸🇬 Singapore 03
+      - 🇸🇬 Singapore 04
+      - 🇸🇬 Singapore 05
+      - 🇸🇬 Singapore 06
+      - 🇸🇬 Singapore 07
+      - 🇸🇬 Singapore 08
+      - 🇸🇬 Singapore 09
+      - 🇸🇬 Singapore 10
+      - 🇸🇬 Singapore 11
+      - 🇸🇬 Singapore 12
+      - 🇸🇬 Singapore 13
+      - 🇯🇵 Japan 01
+      - 🇯🇵 Japan 02
+      - 🇯🇵 Japan 03
+      - 🇯🇵 Japan 04
+      - 🇯🇵 Japan 05
+      - 🇯🇵 Japan 06
+      - 🇯🇵 Japan 07
+      - 🇯🇵 Japan 08
+      - 🇯🇵 Japan 09
+      - 🇯🇵 Japan 10
+      - 🇯🇵 Japan 11
+      - 🇯🇵 Japan 12
+      - 🇯🇵 Japan 13
+      - 🇯🇵 Japan 14
+      - 🇯🇵 Japan 15
+      - 🇺🇸 United States 01
+      - 🇺🇸 United States 02
+      - 🇺🇸 United States 03
+      - 🇺🇸 United States 04
+      - 🇺🇸 United States 05
+      - 🇺🇸 United States 06
+      - 🇺🇸 United States 07
+      - 🇺🇸 United States 08
+      - 🇺🇸 United States 09
+      - 🇺🇸 United States 10
+      - 🇺🇸 United States 11
+      - 🇺🇸 United States 12
+      - 🇺🇸 United States 13
+      - 🇺🇸 United States 14
+      - 🇺🇸 United States 15
+      - 🇨🇳 Taiwan 01
+      - 🇨🇳 Taiwan 02
+  - name: 🎬 Emby
+    type: select
+    proxies:
+      - 小江欧巴
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 02
+      - 🇭🇰 Hong Kong 03
+      - 🇭🇰 Hong Kong 04
+      - 🇭🇰 Hong Kong 05
+      - 🇭🇰 Hong Kong 06
+      - 🇭🇰 Hong Kong 07
+      - 🇭🇰 Hong Kong 08
+      - 🇭🇰 Hong Kong 09
+      - 🇭🇰 Hong Kong 10
+      - 🇭🇰 Hong Kong 11
+      - 🇭🇰 Hong Kong 12
+      - 🇭🇰 Hong Kong 13
+      - 🇭🇰 Hong Kong 14
+      - 🇭🇰 Hong Kong 15
+      - 🇸🇬 Singapore 01
+      - 🇸🇬 Singapore 02
+      - 🇸🇬 Singapore 03
+      - 🇸🇬 Singapore 04
+      - 🇸🇬 Singapore 05
+      - 🇸🇬 Singapore 06
+      - 🇸🇬 Singapore 07
+      - 🇸🇬 Singapore 08
+      - 🇸🇬 Singapore 09
+      - 🇸🇬 Singapore 10
+      - 🇸🇬 Singapore 11
+      - 🇸🇬 Singapore 12
+      - 🇸🇬 Singapore 13
+      - 🇯🇵 Japan 01
+      - 🇯🇵 Japan 02
+      - 🇯🇵 Japan 03
+      - 🇯🇵 Japan 04
+      - 🇯🇵 Japan 05
+      - 🇯🇵 Japan 06
+      - 🇯🇵 Japan 07
+      - 🇯🇵 Japan 08
+      - 🇯🇵 Japan 09
+      - 🇯🇵 Japan 10
+      - 🇯🇵 Japan 11
+      - 🇯🇵 Japan 12
+      - 🇯🇵 Japan 13
+      - 🇯🇵 Japan 14
+      - 🇯🇵 Japan 15
+      - 🇺🇸 United States 01
+      - 🇺🇸 United States 02
+      - 🇺🇸 United States 03
+      - 🇺🇸 United States 04
+      - 🇺🇸 United States 05
+      - 🇺🇸 United States 06
+      - 🇺🇸 United States 07
+      - 🇺🇸 United States 08
+      - 🇺🇸 United States 09
+      - 🇺🇸 United States 10
+      - 🇺🇸 United States 11
+      - 🇺🇸 United States 12
+      - 🇺🇸 United States 13
+      - 🇺🇸 United States 14
+      - 🇺🇸 United States 15
+      - 🇨🇳 Taiwan 01
+      - 🇨🇳 Taiwan 02
+  - name: 📲 Telegram
+    type: select
+    proxies:
+      - 小江欧巴
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 02
+      - 🇭🇰 Hong Kong 03
+      - 🇭🇰 Hong Kong 04
+      - 🇭🇰 Hong Kong 05
+      - 🇭🇰 Hong Kong 06
+      - 🇭🇰 Hong Kong 07
+      - 🇭🇰 Hong Kong 08
+      - 🇭🇰 Hong Kong 09
+      - 🇭🇰 Hong Kong 10
+      - 🇭🇰 Hong Kong 11
+      - 🇭🇰 Hong Kong 12
+      - 🇭🇰 Hong Kong 13
+      - 🇭🇰 Hong Kong 14
+      - 🇭🇰 Hong Kong 15
+      - 🇸🇬 Singapore 01
+      - 🇸🇬 Singapore 02
+      - 🇸🇬 Singapore 03
+      - 🇸🇬 Singapore 04
+      - 🇸🇬 Singapore 05
+      - 🇸🇬 Singapore 06
+      - 🇸🇬 Singapore 07
+      - 🇸🇬 Singapore 08
+      - 🇸🇬 Singapore 09
+      - 🇸🇬 Singapore 10
+      - 🇸🇬 Singapore 11
+      - 🇸🇬 Singapore 12
+      - 🇸🇬 Singapore 13
+      - 🇯🇵 Japan 01
+      - 🇯🇵 Japan 02
+      - 🇯🇵 Japan 03
+      - 🇯🇵 Japan 04
+      - 🇯🇵 Japan 05
+      - 🇯🇵 Japan 06
+      - 🇯🇵 Japan 07
+      - 🇯🇵 Japan 08
+      - 🇯🇵 Japan 09
+      - 🇯🇵 Japan 10
+      - 🇯🇵 Japan 11
+      - 🇯🇵 Japan 12
+      - 🇯🇵 Japan 13
+      - 🇯🇵 Japan 14
+      - 🇯🇵 Japan 15
+      - 🇺🇸 United States 01
+      - 🇺🇸 United States 02
+      - 🇺🇸 United States 03
+      - 🇺🇸 United States 04
+      - 🇺🇸 United States 05
+      - 🇺🇸 United States 06
+      - 🇺🇸 United States 07
+      - 🇺🇸 United States 08
+      - 🇺🇸 United States 09
+      - 🇺🇸 United States 10
+      - 🇺🇸 United States 11
+      - 🇺🇸 United States 12
+      - 🇺🇸 United States 13
+      - 🇺🇸 United States 14
+      - 🇺🇸 United States 15
+      - 🇨🇳 Taiwan 01
+      - 🇨🇳 Taiwan 02
+  - name: 🎬 YouTube
+    type: select
+    proxies:
+      - 小江欧巴
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 02
+      - 🇭🇰 Hong Kong 03
+      - 🇭🇰 Hong Kong 04
+      - 🇭🇰 Hong Kong 05
+      - 🇭🇰 Hong Kong 06
+      - 🇭🇰 Hong Kong 07
+      - 🇭🇰 Hong Kong 08
+      - 🇭🇰 Hong Kong 09
+      - 🇭🇰 Hong Kong 10
+      - 🇭🇰 Hong Kong 11
+      - 🇭🇰 Hong Kong 12
+      - 🇭🇰 Hong Kong 13
+      - 🇭🇰 Hong Kong 14
+      - 🇭🇰 Hong Kong 15
+      - 🇸🇬 Singapore 01
+      - 🇸🇬 Singapore 02
+      - 🇸🇬 Singapore 03
+      - 🇸🇬 Singapore 04
+      - 🇸🇬 Singapore 05
+      - 🇸🇬 Singapore 06
+      - 🇸🇬 Singapore 07
+      - 🇸🇬 Singapore 08
+      - 🇸🇬 Singapore 09
+      - 🇸🇬 Singapore 10
+      - 🇸🇬 Singapore 11
+      - 🇸🇬 Singapore 12
+      - 🇸🇬 Singapore 13
+      - 🇯🇵 Japan 01
+      - 🇯🇵 Japan 02
+      - 🇯🇵 Japan 03
+      - 🇯🇵 Japan 04
+      - 🇯🇵 Japan 05
+      - 🇯🇵 Japan 06
+      - 🇯🇵 Japan 07
+      - 🇯🇵 Japan 08
+      - 🇯🇵 Japan 09
+      - 🇯🇵 Japan 10
+      - 🇯🇵 Japan 11
+      - 🇯🇵 Japan 12
+      - 🇯🇵 Japan 13
+      - 🇯🇵 Japan 14
+      - 🇯🇵 Japan 15
+      - 🇺🇸 United States 01
+      - 🇺🇸 United States 02
+      - 🇺🇸 United States 03
+      - 🇺🇸 United States 04
+      - 🇺🇸 United States 05
+      - 🇺🇸 United States 06
+      - 🇺🇸 United States 07
+      - 🇺🇸 United States 08
+      - 🇺🇸 United States 09
+      - 🇺🇸 United States 10
+      - 🇺🇸 United States 11
+      - 🇺🇸 United States 12
+      - 🇺🇸 United States 13
+      - 🇺🇸 United States 14
+      - 🇺🇸 United States 15
+      - 🇨🇳 Taiwan 01
+      - 🇨🇳 Taiwan 02
+  - name: 🎬 myTVSUPER
+    type: select
+    proxies:
+      - 小江欧巴
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 02
+      - 🇭🇰 Hong Kong 03
+      - 🇭🇰 Hong Kong 04
+      - 🇭🇰 Hong Kong 05
+      - 🇭🇰 Hong Kong 06
+      - 🇭🇰 Hong Kong 07
+      - 🇭🇰 Hong Kong 08
+      - 🇭🇰 Hong Kong 09
+      - 🇭🇰 Hong Kong 10
+      - 🇭🇰 Hong Kong 11
+      - 🇭🇰 Hong Kong 12
+      - 🇭🇰 Hong Kong 13
+      - 🇭🇰 Hong Kong 14
+      - 🇭🇰 Hong Kong 15
+      - 🇸🇬 Singapore 01
+      - 🇸🇬 Singapore 02
+      - 🇸🇬 Singapore 03
+      - 🇸🇬 Singapore 04
+      - 🇸🇬 Singapore 05
+      - 🇸🇬 Singapore 06
+      - 🇸🇬 Singapore 07
+      - 🇸🇬 Singapore 08
+      - 🇸🇬 Singapore 09
+      - 🇸🇬 Singapore 10
+      - 🇸🇬 Singapore 11
+      - 🇸🇬 Singapore 12
+      - 🇸🇬 Singapore 13
+      - 🇯🇵 Japan 01
+      - 🇯🇵 Japan 02
+      - 🇯🇵 Japan 03
+      - 🇯🇵 Japan 04
+      - 🇯🇵 Japan 05
+      - 🇯🇵 Japan 06
+      - 🇯🇵 Japan 07
+      - 🇯🇵 Japan 08
+      - 🇯🇵 Japan 09
+      - 🇯🇵 Japan 10
+      - 🇯🇵 Japan 11
+      - 🇯🇵 Japan 12
+      - 🇯🇵 Japan 13
+      - 🇯🇵 Japan 14
+      - 🇯🇵 Japan 15
+      - 🇺🇸 United States 01
+      - 🇺🇸 United States 02
+      - 🇺🇸 United States 03
+      - 🇺🇸 United States 04
+      - 🇺🇸 United States 05
+      - 🇺🇸 United States 06
+      - 🇺🇸 United States 07
+      - 🇺🇸 United States 08
+      - 🇺🇸 United States 09
+      - 🇺🇸 United States 10
+      - 🇺🇸 United States 11
+      - 🇺🇸 United States 12
+      - 🇺🇸 United States 13
+      - 🇺🇸 United States 14
+      - 🇺🇸 United States 15
+      - 🇨🇳 Taiwan 01
+      - 🇨🇳 Taiwan 02
+  - name: 📲 LineTV
+    type: select
+    proxies:
+      - 小江欧巴
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 02
+      - 🇭🇰 Hong Kong 03
+      - 🇭🇰 Hong Kong 04
+      - 🇭🇰 Hong Kong 05
+      - 🇭🇰 Hong Kong 06
+      - 🇭🇰 Hong Kong 07
+      - 🇭🇰 Hong Kong 08
+      - 🇭🇰 Hong Kong 09
+      - 🇭🇰 Hong Kong 10
+      - 🇭🇰 Hong Kong 11
+      - 🇭🇰 Hong Kong 12
+      - 🇭🇰 Hong Kong 13
+      - 🇭🇰 Hong Kong 14
+      - 🇭🇰 Hong Kong 15
+      - 🇸🇬 Singapore 01
+      - 🇸🇬 Singapore 02
+      - 🇸🇬 Singapore 03
+      - 🇸🇬 Singapore 04
+      - 🇸🇬 Singapore 05
+      - 🇸🇬 Singapore 06
+      - 🇸🇬 Singapore 07
+      - 🇸🇬 Singapore 08
+      - 🇸🇬 Singapore 09
+      - 🇸🇬 Singapore 10
+      - 🇸🇬 Singapore 11
+      - 🇸🇬 Singapore 12
+      - 🇸🇬 Singapore 13
+      - 🇯🇵 Japan 01
+      - 🇯🇵 Japan 02
+      - 🇯🇵 Japan 03
+      - 🇯🇵 Japan 04
+      - 🇯🇵 Japan 05
+      - 🇯🇵 Japan 06
+      - 🇯🇵 Japan 07
+      - 🇯🇵 Japan 08
+      - 🇯🇵 Japan 09
+      - 🇯🇵 Japan 10
+      - 🇯🇵 Japan 11
+      - 🇯🇵 Japan 12
+      - 🇯🇵 Japan 13
+      - 🇯🇵 Japan 14
+      - 🇯🇵 Japan 15
+      - 🇺🇸 United States 01
+      - 🇺🇸 United States 02
+      - 🇺🇸 United States 03
+      - 🇺🇸 United States 04
+      - 🇺🇸 United States 05
+      - 🇺🇸 United States 06
+      - 🇺🇸 United States 07
+      - 🇺🇸 United States 08
+      - 🇺🇸 United States 09
+      - 🇺🇸 United States 10
+      - 🇺🇸 United States 11
+      - 🇺🇸 United States 12
+      - 🇺🇸 United States 13
+      - 🇺🇸 United States 14
+      - 🇺🇸 United States 15
+      - 🇨🇳 Taiwan 01
+      - 🇨🇳 Taiwan 02
+  - name: 🎵 Tiktok
+    type: select
+    proxies:
+      - 小江欧巴
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 02
+      - 🇭🇰 Hong Kong 03
+      - 🇭🇰 Hong Kong 04
+      - 🇭🇰 Hong Kong 05
+      - 🇭🇰 Hong Kong 06
+      - 🇭🇰 Hong Kong 07
+      - 🇭🇰 Hong Kong 08
+      - 🇭🇰 Hong Kong 09
+      - 🇭🇰 Hong Kong 10
+      - 🇭🇰 Hong Kong 11
+      - 🇭🇰 Hong Kong 12
+      - 🇭🇰 Hong Kong 13
+      - 🇭🇰 Hong Kong 14
+      - 🇭🇰 Hong Kong 15
+      - 🇸🇬 Singapore 01
+      - 🇸🇬 Singapore 02
+      - 🇸🇬 Singapore 03
+      - 🇸🇬 Singapore 04
+      - 🇸🇬 Singapore 05
+      - 🇸🇬 Singapore 06
+      - 🇸🇬 Singapore 07
+      - 🇸🇬 Singapore 08
+      - 🇸🇬 Singapore 09
+      - 🇸🇬 Singapore 10
+      - 🇸🇬 Singapore 11
+      - 🇸🇬 Singapore 12
+      - 🇸🇬 Singapore 13
+      - 🇯🇵 Japan 01
+      - 🇯🇵 Japan 02
+      - 🇯🇵 Japan 03
+      - 🇯🇵 Japan 04
+      - 🇯🇵 Japan 05
+      - 🇯🇵 Japan 06
+      - 🇯🇵 Japan 07
+      - 🇯🇵 Japan 08
+      - 🇯🇵 Japan 09
+      - 🇯🇵 Japan 10
+      - 🇯🇵 Japan 11
+      - 🇯🇵 Japan 12
+      - 🇯🇵 Japan 13
+      - 🇯🇵 Japan 14
+      - 🇯🇵 Japan 15
+      - 🇺🇸 United States 01
+      - 🇺🇸 United States 02
+      - 🇺🇸 United States 03
+      - 🇺🇸 United States 04
+      - 🇺🇸 United States 05
+      - 🇺🇸 United States 06
+      - 🇺🇸 United States 07
+      - 🇺🇸 United States 08
+      - 🇺🇸 United States 09
+      - 🇺🇸 United States 10
+      - 🇺🇸 United States 11
+      - 🇺🇸 United States 12
+      - 🇺🇸 United States 13
+      - 🇺🇸 United States 14
+      - 🇺🇸 United States 15
+      - 🇨🇳 Taiwan 01
+      - 🇨🇳 Taiwan 02
+  - name: 📺 Disney
+    type: select
+    proxies:
+      - 小江欧巴
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 02
+      - 🇭🇰 Hong Kong 03
+      - 🇭🇰 Hong Kong 04
+      - 🇭🇰 Hong Kong 05
+      - 🇭🇰 Hong Kong 06
+      - 🇭🇰 Hong Kong 07
+      - 🇭🇰 Hong Kong 08
+      - 🇭🇰 Hong Kong 09
+      - 🇭🇰 Hong Kong 10
+      - 🇭🇰 Hong Kong 11
+      - 🇭🇰 Hong Kong 12
+      - 🇭🇰 Hong Kong 13
+      - 🇭🇰 Hong Kong 14
+      - 🇭🇰 Hong Kong 15
+      - 🇸🇬 Singapore 01
+      - 🇸🇬 Singapore 02
+      - 🇸🇬 Singapore 03
+      - 🇸🇬 Singapore 04
+      - 🇸🇬 Singapore 05
+      - 🇸🇬 Singapore 06
+      - 🇸🇬 Singapore 07
+      - 🇸🇬 Singapore 08
+      - 🇸🇬 Singapore 09
+      - 🇸🇬 Singapore 10
+      - 🇸🇬 Singapore 11
+      - 🇸🇬 Singapore 12
+      - 🇸🇬 Singapore 13
+      - 🇯🇵 Japan 01
+      - 🇯🇵 Japan 02
+      - 🇯🇵 Japan 03
+      - 🇯🇵 Japan 04
+      - 🇯🇵 Japan 05
+      - 🇯🇵 Japan 06
+      - 🇯🇵 Japan 07
+      - 🇯🇵 Japan 08
+      - 🇯🇵 Japan 09
+      - 🇯🇵 Japan 10
+      - 🇯🇵 Japan 11
+      - 🇯🇵 Japan 12
+      - 🇯🇵 Japan 13
+      - 🇯🇵 Japan 14
+      - 🇯🇵 Japan 15
+      - 🇺🇸 United States 01
+      - 🇺🇸 United States 02
+      - 🇺🇸 United States 03
+      - 🇺🇸 United States 04
+      - 🇺🇸 United States 05
+      - 🇺🇸 United States 06
+      - 🇺🇸 United States 07
+      - 🇺🇸 United States 08
+      - 🇺🇸 United States 09
+      - 🇺🇸 United States 10
+      - 🇺🇸 United States 11
+      - 🇺🇸 United States 12
+      - 🇺🇸 United States 13
+      - 🇺🇸 United States 14
+      - 🇺🇸 United States 15
+      - 🇨🇳 Taiwan 01
+      - 🇨🇳 Taiwan 02
+  - name: 📺 Netflix
+    type: select
+    proxies:
+      - 小江欧巴
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 02
+      - 🇭🇰 Hong Kong 03
+      - 🇭🇰 Hong Kong 04
+      - 🇭🇰 Hong Kong 05
+      - 🇭🇰 Hong Kong 06
+      - 🇭🇰 Hong Kong 07
+      - 🇭🇰 Hong Kong 08
+      - 🇭🇰 Hong Kong 09
+      - 🇭🇰 Hong Kong 10
+      - 🇭🇰 Hong Kong 11
+      - 🇭🇰 Hong Kong 12
+      - 🇭🇰 Hong Kong 13
+      - 🇭🇰 Hong Kong 14
+      - 🇭🇰 Hong Kong 15
+      - 🇸🇬 Singapore 01
+      - 🇸🇬 Singapore 02
+      - 🇸🇬 Singapore 03
+      - 🇸🇬 Singapore 04
+      - 🇸🇬 Singapore 05
+      - 🇸🇬 Singapore 06
+      - 🇸🇬 Singapore 07
+      - 🇸🇬 Singapore 08
+      - 🇸🇬 Singapore 09
+      - 🇸🇬 Singapore 10
+      - 🇸🇬 Singapore 11
+      - 🇸🇬 Singapore 12
+      - 🇸🇬 Singapore 13
+      - 🇯🇵 Japan 01
+      - 🇯🇵 Japan 02
+      - 🇯🇵 Japan 03
+      - 🇯🇵 Japan 04
+      - 🇯🇵 Japan 05
+      - 🇯🇵 Japan 06
+      - 🇯🇵 Japan 07
+      - 🇯🇵 Japan 08
+      - 🇯🇵 Japan 09
+      - 🇯🇵 Japan 10
+      - 🇯🇵 Japan 11
+      - 🇯🇵 Japan 12
+      - 🇯🇵 Japan 13
+      - 🇯🇵 Japan 14
+      - 🇯🇵 Japan 15
+      - 🇺🇸 United States 01
+      - 🇺🇸 United States 02
+      - 🇺🇸 United States 03
+      - 🇺🇸 United States 04
+      - 🇺🇸 United States 05
+      - 🇺🇸 United States 06
+      - 🇺🇸 United States 07
+      - 🇺🇸 United States 08
+      - 🇺🇸 United States 09
+      - 🇺🇸 United States 10
+      - 🇺🇸 United States 11
+      - 🇺🇸 United States 12
+      - 🇺🇸 United States 13
+      - 🇺🇸 United States 14
+      - 🇺🇸 United States 15
+      - 🇨🇳 Taiwan 01
+      - 🇨🇳 Taiwan 02
+  - name: 🌐 Google
+    type: select
+    proxies:
+      - 小江欧巴
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 02
+      - 🇭🇰 Hong Kong 03
+      - 🇭🇰 Hong Kong 04
+      - 🇭🇰 Hong Kong 05
+      - 🇭🇰 Hong Kong 06
+      - 🇭🇰 Hong Kong 07
+      - 🇭🇰 Hong Kong 08
+      - 🇭🇰 Hong Kong 09
+      - 🇭🇰 Hong Kong 10
+      - 🇭🇰 Hong Kong 11
+      - 🇭🇰 Hong Kong 12
+      - 🇭🇰 Hong Kong 13
+      - 🇭🇰 Hong Kong 14
+      - 🇭🇰 Hong Kong 15
+      - 🇸🇬 Singapore 01
+      - 🇸🇬 Singapore 02
+      - 🇸🇬 Singapore 03
+      - 🇸🇬 Singapore 04
+      - 🇸🇬 Singapore 05
+      - 🇸🇬 Singapore 06
+      - 🇸🇬 Singapore 07
+      - 🇸🇬 Singapore 08
+      - 🇸🇬 Singapore 09
+      - 🇸🇬 Singapore 10
+      - 🇸🇬 Singapore 11
+      - 🇸🇬 Singapore 12
+      - 🇸🇬 Singapore 13
+      - 🇯🇵 Japan 01
+      - 🇯🇵 Japan 02
+      - 🇯🇵 Japan 03
+      - 🇯🇵 Japan 04
+      - 🇯🇵 Japan 05
+      - 🇯🇵 Japan 06
+      - 🇯🇵 Japan 07
+      - 🇯🇵 Japan 08
+      - 🇯🇵 Japan 09
+      - 🇯🇵 Japan 10
+      - 🇯🇵 Japan 11
+      - 🇯🇵 Japan 12
+      - 🇯🇵 Japan 13
+      - 🇯🇵 Japan 14
+      - 🇯🇵 Japan 15
+      - 🇺🇸 United States 01
+      - 🇺🇸 United States 02
+      - 🇺🇸 United States 03
+      - 🇺🇸 United States 04
+      - 🇺🇸 United States 05
+      - 🇺🇸 United States 06
+      - 🇺🇸 United States 07
+      - 🇺🇸 United States 08
+      - 🇺🇸 United States 09
+      - 🇺🇸 United States 10
+      - 🇺🇸 United States 11
+      - 🇺🇸 United States 12
+      - 🇺🇸 United States 13
+      - 🇺🇸 United States 14
+      - 🇺🇸 United States 15
+      - 🇨🇳 Taiwan 01
+      - 🇨🇳 Taiwan 02
+  - name: 🖥 Microsoft
+    type: select
+    proxies:
+      - 小江欧巴
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 02
+      - 🇭🇰 Hong Kong 03
+      - 🇭🇰 Hong Kong 04
+      - 🇭🇰 Hong Kong 05
+      - 🇭🇰 Hong Kong 06
+      - 🇭🇰 Hong Kong 07
+      - 🇭🇰 Hong Kong 08
+      - 🇭🇰 Hong Kong 09
+      - 🇭🇰 Hong Kong 10
+      - 🇭🇰 Hong Kong 11
+      - 🇭🇰 Hong Kong 12
+      - 🇭🇰 Hong Kong 13
+      - 🇭🇰 Hong Kong 14
+      - 🇭🇰 Hong Kong 15
+      - 🇸🇬 Singapore 01
+      - 🇸🇬 Singapore 02
+      - 🇸🇬 Singapore 03
+      - 🇸🇬 Singapore 04
+      - 🇸🇬 Singapore 05
+      - 🇸🇬 Singapore 06
+      - 🇸🇬 Singapore 07
+      - 🇸🇬 Singapore 08
+      - 🇸🇬 Singapore 09
+      - 🇸🇬 Singapore 10
+      - 🇸🇬 Singapore 11
+      - 🇸🇬 Singapore 12
+      - 🇸🇬 Singapore 13
+      - 🇯🇵 Japan 01
+      - 🇯🇵 Japan 02
+      - 🇯🇵 Japan 03
+      - 🇯🇵 Japan 04
+      - 🇯🇵 Japan 05
+      - 🇯🇵 Japan 06
+      - 🇯🇵 Japan 07
+      - 🇯🇵 Japan 08
+      - 🇯🇵 Japan 09
+      - 🇯🇵 Japan 10
+      - 🇯🇵 Japan 11
+      - 🇯🇵 Japan 12
+      - 🇯🇵 Japan 13
+      - 🇯🇵 Japan 14
+      - 🇯🇵 Japan 15
+      - 🇺🇸 United States 01
+      - 🇺🇸 United States 02
+      - 🇺🇸 United States 03
+      - 🇺🇸 United States 04
+      - 🇺🇸 United States 05
+      - 🇺🇸 United States 06
+      - 🇺🇸 United States 07
+      - 🇺🇸 United States 08
+      - 🇺🇸 United States 09
+      - 🇺🇸 United States 10
+      - 🇺🇸 United States 11
+      - 🇺🇸 United States 12
+      - 🇺🇸 United States 13
+      - 🇺🇸 United States 14
+      - 🇺🇸 United States 15
+      - 🇨🇳 Taiwan 01
+      - 🇨🇳 Taiwan 02
+  - name: 🖥 Learning
+    type: select
+    proxies:
+      - 小江欧巴
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 02
+      - 🇭🇰 Hong Kong 03
+      - 🇭🇰 Hong Kong 04
+      - 🇭🇰 Hong Kong 05
+      - 🇭🇰 Hong Kong 06
+      - 🇭🇰 Hong Kong 07
+      - 🇭🇰 Hong Kong 08
+      - 🇭🇰 Hong Kong 09
+      - 🇭🇰 Hong Kong 10
+      - 🇭🇰 Hong Kong 11
+      - 🇭🇰 Hong Kong 12
+      - 🇭🇰 Hong Kong 13
+      - 🇭🇰 Hong Kong 14
+      - 🇭🇰 Hong Kong 15
+      - 🇸🇬 Singapore 01
+      - 🇸🇬 Singapore 02
+      - 🇸🇬 Singapore 03
+      - 🇸🇬 Singapore 04
+      - 🇸🇬 Singapore 05
+      - 🇸🇬 Singapore 06
+      - 🇸🇬 Singapore 07
+      - 🇸🇬 Singapore 08
+      - 🇸🇬 Singapore 09
+      - 🇸🇬 Singapore 10
+      - 🇸🇬 Singapore 11
+      - 🇸🇬 Singapore 12
+      - 🇸🇬 Singapore 13
+      - 🇯🇵 Japan 01
+      - 🇯🇵 Japan 02
+      - 🇯🇵 Japan 03
+      - 🇯🇵 Japan 04
+      - 🇯🇵 Japan 05
+      - 🇯🇵 Japan 06
+      - 🇯🇵 Japan 07
+      - 🇯🇵 Japan 08
+      - 🇯🇵 Japan 09
+      - 🇯🇵 Japan 10
+      - 🇯🇵 Japan 11
+      - 🇯🇵 Japan 12
+      - 🇯🇵 Japan 13
+      - 🇯🇵 Japan 14
+      - 🇯🇵 Japan 15
+      - 🇺🇸 United States 01
+      - 🇺🇸 United States 02
+      - 🇺🇸 United States 03
+      - 🇺🇸 United States 04
+      - 🇺🇸 United States 05
+      - 🇺🇸 United States 06
+      - 🇺🇸 United States 07
+      - 🇺🇸 United States 08
+      - 🇺🇸 United States 09
+      - 🇺🇸 United States 10
+      - 🇺🇸 United States 11
+      - 🇺🇸 United States 12
+      - 🇺🇸 United States 13
+      - 🇺🇸 United States 14
+      - 🇺🇸 United States 15
+      - 🇨🇳 Taiwan 01
+      - 🇨🇳 Taiwan 02
+  - name: 📟 Twitter
+    type: select
+    proxies:
+      - 小江欧巴
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 02
+      - 🇭🇰 Hong Kong 03
+      - 🇭🇰 Hong Kong 04
+      - 🇭🇰 Hong Kong 05
+      - 🇭🇰 Hong Kong 06
+      - 🇭🇰 Hong Kong 07
+      - 🇭🇰 Hong Kong 08
+      - 🇭🇰 Hong Kong 09
+      - 🇭🇰 Hong Kong 10
+      - 🇭🇰 Hong Kong 11
+      - 🇭🇰 Hong Kong 12
+      - 🇭🇰 Hong Kong 13
+      - 🇭🇰 Hong Kong 14
+      - 🇭🇰 Hong Kong 15
+      - 🇸🇬 Singapore 01
+      - 🇸🇬 Singapore 02
+      - 🇸🇬 Singapore 03
+      - 🇸🇬 Singapore 04
+      - 🇸🇬 Singapore 05
+      - 🇸🇬 Singapore 06
+      - 🇸🇬 Singapore 07
+      - 🇸🇬 Singapore 08
+      - 🇸🇬 Singapore 09
+      - 🇸🇬 Singapore 10
+      - 🇸🇬 Singapore 11
+      - 🇸🇬 Singapore 12
+      - 🇸🇬 Singapore 13
+      - 🇯🇵 Japan 01
+      - 🇯🇵 Japan 02
+      - 🇯🇵 Japan 03
+      - 🇯🇵 Japan 04
+      - 🇯🇵 Japan 05
+      - 🇯🇵 Japan 06
+      - 🇯🇵 Japan 07
+      - 🇯🇵 Japan 08
+      - 🇯🇵 Japan 09
+      - 🇯🇵 Japan 10
+      - 🇯🇵 Japan 11
+      - 🇯🇵 Japan 12
+      - 🇯🇵 Japan 13
+      - 🇯🇵 Japan 14
+      - 🇯🇵 Japan 15
+      - 🇺🇸 United States 01
+      - 🇺🇸 United States 02
+      - 🇺🇸 United States 03
+      - 🇺🇸 United States 04
+      - 🇺🇸 United States 05
+      - 🇺🇸 United States 06
+      - 🇺🇸 United States 07
+      - 🇺🇸 United States 08
+      - 🇺🇸 United States 09
+      - 🇺🇸 United States 10
+      - 🇺🇸 United States 11
+      - 🇺🇸 United States 12
+      - 🇺🇸 United States 13
+      - 🇺🇸 United States 14
+      - 🇺🇸 United States 15
+      - 🇨🇳 Taiwan 01
+      - 🇨🇳 Taiwan 02
+  - name: 📺 International-Media
+    type: select
+    proxies:
+      - 小江欧巴
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 02
+      - 🇭🇰 Hong Kong 03
+      - 🇭🇰 Hong Kong 04
+      - 🇭🇰 Hong Kong 05
+      - 🇭🇰 Hong Kong 06
+      - 🇭🇰 Hong Kong 07
+      - 🇭🇰 Hong Kong 08
+      - 🇭🇰 Hong Kong 09
+      - 🇭🇰 Hong Kong 10
+      - 🇭🇰 Hong Kong 11
+      - 🇭🇰 Hong Kong 12
+      - 🇭🇰 Hong Kong 13
+      - 🇭🇰 Hong Kong 14
+      - 🇭🇰 Hong Kong 15
+      - 🇸🇬 Singapore 01
+      - 🇸🇬 Singapore 02
+      - 🇸🇬 Singapore 03
+      - 🇸🇬 Singapore 04
+      - 🇸🇬 Singapore 05
+      - 🇸🇬 Singapore 06
+      - 🇸🇬 Singapore 07
+      - 🇸🇬 Singapore 08
+      - 🇸🇬 Singapore 09
+      - 🇸🇬 Singapore 10
+      - 🇸🇬 Singapore 11
+      - 🇸🇬 Singapore 12
+      - 🇸🇬 Singapore 13
+      - 🇯🇵 Japan 01
+      - 🇯🇵 Japan 02
+      - 🇯🇵 Japan 03
+      - 🇯🇵 Japan 04
+      - 🇯🇵 Japan 05
+      - 🇯🇵 Japan 06
+      - 🇯🇵 Japan 07
+      - 🇯🇵 Japan 08
+      - 🇯🇵 Japan 09
+      - 🇯🇵 Japan 10
+      - 🇯🇵 Japan 11
+      - 🇯🇵 Japan 12
+      - 🇯🇵 Japan 13
+      - 🇯🇵 Japan 14
+      - 🇯🇵 Japan 15
+      - 🇺🇸 United States 01
+      - 🇺🇸 United States 02
+      - 🇺🇸 United States 03
+      - 🇺🇸 United States 04
+      - 🇺🇸 United States 05
+      - 🇺🇸 United States 06
+      - 🇺🇸 United States 07
+      - 🇺🇸 United States 08
+      - 🇺🇸 United States 09
+      - 🇺🇸 United States 10
+      - 🇺🇸 United States 11
+      - 🇺🇸 United States 12
+      - 🇺🇸 United States 13
+      - 🇺🇸 United States 14
+      - 🇺🇸 United States 15
+      - 🇨🇳 Taiwan 01
+      - 🇨🇳 Taiwan 02
+rules:
+  - DOMAIN-SUFFIX,emby.nexitally.com,🎬 Emby
+  - DOMAIN-SUFFIX,aaplimg.com,🍎 Apple
+  - DOMAIN-SUFFIX,Apple.co,🍎 Apple
+  - DOMAIN-SUFFIX,Apple.com,🍎 Apple
+  - DOMAIN-SUFFIX,appstore.com,🍎 Apple
+  - DOMAIN-SUFFIX,cdn-Apple.com,🍎 Apple
+  - DOMAIN-SUFFIX,crashlytics.com,🍎 Apple
+  - DOMAIN-SUFFIX,icloud.com,🍎 Apple
+  - DOMAIN-SUFFIX,icloud-content.com,🍎 Apple
+  - DOMAIN-SUFFIX,me.com,🍎 Apple
+  - DOMAIN-SUFFIX,mzstatic.com,🍎 Apple
+  - DOMAIN,www-cdn.icloud.com.akadns.net,🍎 Apple
+  - IP-CIDR,17.0.0.0/8,🍎 Apple
+  - DOMAIN-SUFFIX,t.me,📲 Telegram
+  - DOMAIN-SUFFIX,tdesktop.com,📲 Telegram
+  - DOMAIN-SUFFIX,telegra.ph,📲 Telegram
+  - DOMAIN-SUFFIX,telegram.me,📲 Telegram
+  - DOMAIN-SUFFIX,telegram.org,📲 Telegram
+  - DOMAIN-SUFFIX,telesco.pe,📲 Telegram
+  - IP-CIDR,91.108.4.0/22,📲 Telegram
+  - IP-CIDR,91.108.8.0/22,📲 Telegram
+  - IP-CIDR,91.108.12.0/22,📲 Telegram
+  - IP-CIDR,91.108.16.0/22,📲 Telegram
+  - IP-CIDR,91.108.20.0/22,📲 Telegram
+  - IP-CIDR,91.108.56.0/22,📲 Telegram
+  - IP-CIDR,149.154.160.0/20,📲 Telegram
+  - DOMAIN-SUFFIX,mytvsuper.com,🎬 myTVSUPER
+  - DOMAIN-SUFFIX,tvb.com,🎬 myTVSUPER
+  - DOMAIN-SUFFIX,d3c7rimkq79yfu.cloudfront.net,📲 LineTV
+  - DOMAIN-SUFFIX,linetv.tw,📲 LineTV
+  - DOMAIN-SUFFIX,profile.line-scdn.net,📲 LineTV
+  - DOMAIN-SUFFIX,byteoversea.com,🎵 Tiktok
+  - DOMAIN-SUFFIX,ibytedtos.com,🎵 Tiktok
+  - DOMAIN-SUFFIX,ipstatp.com,🎵 Tiktok
+  - DOMAIN-SUFFIX,muscdn.com,🎵 Tiktok
+  - DOMAIN-SUFFIX,musical.ly,🎵 Tiktok
+  - DOMAIN-SUFFIX,tiktok.com,🎵 Tiktok
+  - DOMAIN-SUFFIX,tik-tokapi.com,🎵 Tiktok
+  - DOMAIN-SUFFIX,tiktokcdn.com,🎵 Tiktok
+  - DOMAIN-SUFFIX,tiktokv.com,🎵 Tiktok
+  - DOMAIN-KEYWORD,-tiktokcdn-com,🎵 Tiktok
+  - DOMAIN-SUFFIX,googlevideo.com,🎬 YouTube
+  - DOMAIN-SUFFIX,youtube.com,🎬 YouTube
+  - DOMAIN-SUFFIX,ytimg.com,🎬 YouTube
+  - DOMAIN,youtubei.googleapis.com,🎬 YouTube
+  - DOMAIN,yt3.ggpht.com,🎬 YouTube
+  - DOMAIN-SUFFIX,20thcenturystudios.com.au,📺 Disney
+  - DOMAIN-SUFFIX,20thcenturystudios.com.br,📺 Disney
+  - DOMAIN-SUFFIX,20thcenturystudios.jp,📺 Disney
+  - DOMAIN-SUFFIX,abc-studios.com,📺 Disney
+  - DOMAIN-SUFFIX,abc.com,📺 Disney
+  - DOMAIN-SUFFIX,adobedtm.com,📺 Disney
+  - DOMAIN-SUFFIX,adventuresbydisney.com,📺 Disney
+  - DOMAIN-SUFFIX,babble.com,📺 Disney
+  - DOMAIN-SUFFIX,babyzone.com,📺 Disney
+  - DOMAIN-SUFFIX,bam.nr-data.net,📺 Disney
+  - DOMAIN-SUFFIX,bamgrid.com,📺 Disney
+  - DOMAIN-SUFFIX,beautyandthebeastmusical.co.uk,📺 Disney
+  - DOMAIN-SUFFIX,braze.com,📺 Disney
+  - DOMAIN-SUFFIX,cdn.optimizely.com,📺 Disney
+  - DOMAIN-SUFFIX,conviva.com,📺 Disney
+  - DOMAIN-SUFFIX,d9.flashtalking.com,📺 Disney
+  - DOMAIN-SUFFIX,dilcdn.com,📺 Disney
+  - DOMAIN-SUFFIX,disney-asia.com,📺 Disney
+  - DOMAIN-SUFFIX,disney-discount.com,📺 Disney
+  - DOMAIN-SUFFIX,disney-plus.net,📺 Disney
+  - DOMAIN-SUFFIX,disney-portal.my.onetrust.com,📺 Disney
+  - DOMAIN-SUFFIX,disney-studio.com,📺 Disney
+  - DOMAIN-SUFFIX,disney-studio.net,📺 Disney
+  - DOMAIN-SUFFIX,disney.asia,📺 Disney
+  - DOMAIN-SUFFIX,disney.be,📺 Disney
+  - DOMAIN-SUFFIX,disney.bg,📺 Disney
+  - DOMAIN-SUFFIX,disney.ca,📺 Disney
+  - DOMAIN-SUFFIX,disney.ch,📺 Disney
+  - DOMAIN-SUFFIX,disney.co.il,📺 Disney
+  - DOMAIN-SUFFIX,disney.co.jp,📺 Disney
+  - DOMAIN-SUFFIX,disney.co.kr,📺 Disney
+  - DOMAIN-SUFFIX,disney.co.th,📺 Disney
+  - DOMAIN-SUFFIX,disney.co.uk,📺 Disney
+  - DOMAIN-SUFFIX,disney.co.za,📺 Disney
+  - DOMAIN-SUFFIX,disney.com,📺 Disney
+  - DOMAIN-SUFFIX,disney.com.au,📺 Disney
+  - DOMAIN-SUFFIX,disney.com.br,📺 Disney
+  - DOMAIN-SUFFIX,disney.com.hk,📺 Disney
+  - DOMAIN-SUFFIX,disney.com.tw,📺 Disney
+  - DOMAIN-SUFFIX,disney.cz,📺 Disney
+  - DOMAIN-SUFFIX,disney.de,📺 Disney
+  - DOMAIN-SUFFIX,disney.demdex.net,📺 Disney
+  - DOMAIN-SUFFIX,disney.dk,📺 Disney
+  - DOMAIN-SUFFIX,disney.es,📺 Disney
+  - DOMAIN-SUFFIX,disney.fi,📺 Disney
+  - DOMAIN-SUFFIX,disney.fr,📺 Disney
+  - DOMAIN-SUFFIX,disney.gr,📺 Disney
+  - DOMAIN-SUFFIX,disney.hu,📺 Disney
+  - DOMAIN-SUFFIX,disney.id,📺 Disney
+  - DOMAIN-SUFFIX,disney.in,📺 Disney
+  - DOMAIN-SUFFIX,disney.io,📺 Disney
+  - DOMAIN-SUFFIX,disney.it,📺 Disney
+  - DOMAIN-SUFFIX,disney.my,📺 Disney
+  - DOMAIN-SUFFIX,disney.my.sentry.io,📺 Disney
+  - DOMAIN-SUFFIX,disney.nl,📺 Disney
+  - DOMAIN-SUFFIX,disney.no,📺 Disney
+  - DOMAIN-SUFFIX,disney.ph,📺 Disney
+  - DOMAIN-SUFFIX,disney.pl,📺 Disney
+  - DOMAIN-SUFFIX,disney.pt,📺 Disney
+  - DOMAIN-SUFFIX,disney.ro,📺 Disney
+  - DOMAIN-SUFFIX,disney.ru,📺 Disney
+  - DOMAIN-SUFFIX,disney.se,📺 Disney
+  - DOMAIN-SUFFIX,disney.sg,📺 Disney
+  - DOMAIN-SUFFIX,disneyadsales.com,📺 Disney
+  - DOMAIN-SUFFIX,disneyarena.com,📺 Disney
+  - DOMAIN-SUFFIX,disneyaulani.com,📺 Disney
+  - DOMAIN-SUFFIX,disneybaby.com,📺 Disney
+  - DOMAIN-SUFFIX,disneycareers.com,📺 Disney
+  - DOMAIN-SUFFIX,disneychannelonstage.com,📺 Disney
+  - DOMAIN-SUFFIX,disneychannelroadtrip.com,📺 Disney
+  - DOMAIN-SUFFIX,disneycruisebrasil.com,📺 Disney
+  - DOMAIN-SUFFIX,disneyenconcert.com,📺 Disney
+  - DOMAIN-SUFFIX,disneyiejobs.com,📺 Disney
+  - DOMAIN-SUFFIX,disneyinflight.com,📺 Disney
+  - DOMAIN-SUFFIX,disneyinternational.com,📺 Disney
+  - DOMAIN-SUFFIX,disneyinternationalhd.com,📺 Disney
+  - DOMAIN-SUFFIX,disneyjunior.com,📺 Disney
+  - DOMAIN-SUFFIX,disneyjuniortreataday.com,📺 Disney
+  - DOMAIN-SUFFIX,disneylatino.com,📺 Disney
+  - DOMAIN-SUFFIX,disneymagicmoments.co.il,📺 Disney
+  - DOMAIN-SUFFIX,disneymagicmoments.co.uk,📺 Disney
+  - DOMAIN-SUFFIX,disneymagicmoments.co.za,📺 Disney
+  - DOMAIN-SUFFIX,disneymagicmoments.de,📺 Disney
+  - DOMAIN-SUFFIX,disneymagicmoments.es,📺 Disney
+  - DOMAIN-SUFFIX,disneymagicmoments.fr,📺 Disney
+  - DOMAIN-SUFFIX,disneymagicmoments.gen.tr,📺 Disney
+  - DOMAIN-SUFFIX,disneymagicmoments.gr,📺 Disney
+  - DOMAIN-SUFFIX,disneymagicmoments.it,📺 Disney
+  - DOMAIN-SUFFIX,disneymagicmoments.pl,📺 Disney
+  - DOMAIN-SUFFIX,disneymagicmomentsme.com,📺 Disney
+  - DOMAIN-SUFFIX,disneyme.com,📺 Disney
+  - DOMAIN-SUFFIX,disneymeetingsandevents.com,📺 Disney
+  - DOMAIN-SUFFIX,disneymovieinsiders.com,📺 Disney
+  - DOMAIN-SUFFIX,disneymusicpromotion.com,📺 Disney
+  - DOMAIN-SUFFIX,disneynewseries.com,📺 Disney
+  - DOMAIN-SUFFIX,disneynow.com,📺 Disney
+  - DOMAIN-SUFFIX,disneypeoplesurveys.com,📺 Disney
+  - DOMAIN-SUFFIX,disneyplus.bn5x.net,📺 Disney
+  - DOMAIN-SUFFIX,disneyplus.com,📺 Disney
+  - DOMAIN-SUFFIX,disneyplus.com.ssl.sc.omtrdc.net,📺 Disney
+  - DOMAIN-SUFFIX,disneyredirects.com,📺 Disney
+  - DOMAIN-SUFFIX,disneysrivieraresort.com,📺 Disney
+  - DOMAIN-SUFFIX,disneystore.com,📺 Disney
+  - DOMAIN-SUFFIX,disneystreaming.com,📺 Disney
+  - DOMAIN-SUFFIX,disneysubscription.com,📺 Disney
+  - DOMAIN-SUFFIX,disneytickets.co.uk,📺 Disney
+  - DOMAIN-SUFFIX,disneyturkiye.com.tr,📺 Disney
+  - DOMAIN-SUFFIX,disneytvajobs.com,📺 Disney
+  - DOMAIN-SUFFIX,disneyworld-go.com,📺 Disney
+  - DOMAIN-SUFFIX,dmed.technology,📺 Disney
+  - DOMAIN-SUFFIX,dssott.com,📺 Disney
+  - DOMAIN-SUFFIX,dtci.co,📺 Disney
+  - DOMAIN-SUFFIX,dtci.technology,📺 Disney
+  - DOMAIN-SUFFIX,edgedatg.com,📺 Disney
+  - DOMAIN-SUFFIX,espn.co.uk,📺 Disney
+  - DOMAIN-SUFFIX,espn.com,📺 Disney
+  - DOMAIN-SUFFIX,espn.hb.omtrdc.net,📺 Disney
+  - DOMAIN-SUFFIX,espn.net,📺 Disney
+  - DOMAIN-SUFFIX,espncdn.com,📺 Disney
+  - DOMAIN-SUFFIX,espndotcom.tt.omtrdc.net,📺 Disney
+  - DOMAIN-SUFFIX,espnqa.com,📺 Disney
+  - DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com,📺 Disney
+  - DOMAIN-SUFFIX,go-disneyworldgo.com,📺 Disney
+  - DOMAIN-SUFFIX,go.com,📺 Disney
+  - DOMAIN-SUFFIX,js-agent.newrelic.com,📺 Disney
+  - DOMAIN-SUFFIX,marvel.com,📺 Disney
+  - DOMAIN-SUFFIX,marvel10thanniversary.com,📺 Disney
+  - DOMAIN-SUFFIX,marveldimensionofheroes.com,📺 Disney
+  - DOMAIN-SUFFIX,marvelparty.net,📺 Disney
+  - DOMAIN-SUFFIX,marvelpinball.com,📺 Disney
+  - DOMAIN-SUFFIX,marvelsdoubleagent.com,📺 Disney
+  - DOMAIN-SUFFIX,marvelspotlightplays.com,📺 Disney
+  - DOMAIN-SUFFIX,marvelsuperheroseptember.com,📺 Disney
+  - DOMAIN-SUFFIX,marvelsuperwar.com,📺 Disney
+  - DOMAIN-SUFFIX,mickey.tv,📺 Disney
+  - DOMAIN-SUFFIX,moviesanywhere.com,📺 Disney
+  - DOMAIN-SUFFIX,natgeomaps.com,📺 Disney
+  - DOMAIN-SUFFIX,nationalgeographic.com,📺 Disney
+  - DOMAIN-SUFFIX,nationalgeographicpartners.com,📺 Disney
+  - DOMAIN-SUFFIX,ngeo.com,📺 Disney
+  - DOMAIN-SUFFIX,nomadlandmovie.ch,📺 Disney
+  - DOMAIN-SUFFIX,playmation.com,📺 Disney
+  - DOMAIN-SUFFIX,shopdisney.com,📺 Disney
+  - DOMAIN-SUFFIX,shops-disney.com,📺 Disney
+  - DOMAIN-SUFFIX,sorcerersarena.com,📺 Disney
+  - DOMAIN-SUFFIX,spaindisney.com,📺 Disney
+  - DOMAIN-SUFFIX,star-brasil.com,📺 Disney
+  - DOMAIN-SUFFIX,star-latam.com,📺 Disney
+  - DOMAIN-SUFFIX,starwars.com,📺 Disney
+  - DOMAIN-SUFFIX,starwarsgalacticstarcruiser.com,📺 Disney
+  - DOMAIN-SUFFIX,starwarskids.com,📺 Disney
+  - DOMAIN-SUFFIX,streamingdisney.net,📺 Disney
+  - DOMAIN-SUFFIX,themarvelexperiencetour.com,📺 Disney
+  - DOMAIN-SUFFIX,thestationbymaker.com,📺 Disney
+  - DOMAIN-SUFFIX,thisispolaris.com,📺 Disney
+  - DOMAIN-SUFFIX,watchdisneyfe.com,📺 Disney
+  - DOMAIN-SUFFIX,watchespn.com,📺 Disney
+  - PROCESS-NAME,com.disney.datg.videoplatforms.android.abc,📺 Disney
+  - PROCESS-NAME,com.disney.disneyplus,📺 Disney
+  - DOMAIN-SUFFIX,netflix.com,📺 Netflix
+  - DOMAIN-SUFFIX,netflix.net,📺 Netflix
+  - DOMAIN-SUFFIX,nflxext.com,📺 Netflix
+  - DOMAIN-SUFFIX,nflximg.com,📺 Netflix
+  - DOMAIN-SUFFIX,nflximg.net,📺 Netflix
+  - DOMAIN-SUFFIX,nflxso.net,📺 Netflix
+  - DOMAIN-SUFFIX,nflxvideo.net,📺 Netflix
+  - DOMAIN-SUFFIX,netflixdnstest0.com,📺 Netflix
+  - DOMAIN-SUFFIX,netflixdnstest1.com,📺 Netflix
+  - DOMAIN-SUFFIX,netflixdnstest2.com,📺 Netflix
+  - DOMAIN-SUFFIX,netflixdnstest3.com,📺 Netflix
+  - DOMAIN-SUFFIX,netflixdnstest4.com,📺 Netflix
+  - DOMAIN-SUFFIX,netflixdnstest5.com,📺 Netflix
+  - DOMAIN-SUFFIX,netflixdnstest6.com,📺 Netflix
+  - DOMAIN-SUFFIX,netflixdnstest7.com,📺 Netflix
+  - DOMAIN-SUFFIX,netflixdnstest8.com,📺 Netflix
+  - DOMAIN-SUFFIX,netflixdnstest9.com,📺 Netflix
+  - DOMAIN-KEYWORD,dualstack.apiproxy-device-prod-nlb-,📺 Netflix
+  - DOMAIN-KEYWORD,dualstack.ichnaea-web-,📺 Netflix
+  - IP-CIDR,23.246.0.0/18,📺 Netflix
+  - IP-CIDR,37.77.184.0/21,📺 Netflix
+  - IP-CIDR,45.57.0.0/17,📺 Netflix
+  - IP-CIDR,64.120.128.0/17,📺 Netflix
+  - IP-CIDR,66.197.128.0/17,📺 Netflix
+  - IP-CIDR,108.175.32.0/20,📺 Netflix
+  - IP-CIDR,192.173.64.0/18,📺 Netflix
+  - IP-CIDR,198.38.96.0/19,📺 Netflix
+  - IP-CIDR,198.45.48.0/20,📺 Netflix
+  - IP-CIDR,34.210.42.111/32,📺 Netflix
+  - IP-CIDR,52.89.124.203/32,📺 Netflix
+  - IP-CIDR,54.148.37.5/32,📺 Netflix
+  - DOMAIN,mtalk.google.com,DIRECT
+  - DOMAIN,mobile-gtalk.l.google.com,DIRECT
+  - DOMAIN,alt1-mtalk.google.com,DIRECT
+  - DOMAIN,alt2-mtalk.google.com,DIRECT
+  - DOMAIN,alt3-mtalk.google.com,DIRECT
+  - DOMAIN,alt4-mtalk.google.com,DIRECT
+  - DOMAIN,alt5-mtalk.google.com,DIRECT
+  - DOMAIN,alt6-mtalk.google.com,DIRECT
+  - DOMAIN,alt7-mtalk.google.com,DIRECT
+  - DOMAIN,alt8-mtalk.google.com,DIRECT
+  - DOMAIN,alt9-mtalk.google.com,DIRECT
+  - DOMAIN-SUFFIX,mobile-gtalk.l.google.com,DIRECT
+  - DOMAIN-SUFFIX,265.com,🌐 Google
+  - DOMAIN-SUFFIX,2mdn.net,🌐 Google
+  - DOMAIN-SUFFIX,abc.xyz,🌐 Google
+  - DOMAIN-SUFFIX,adservice.google.com,🌐 Google
+  - DOMAIN-SUFFIX,ampproject.org,🌐 Google
+  - DOMAIN-SUFFIX,android.com,🌐 Google
+  - DOMAIN-SUFFIX,androidify.com,🌐 Google
+  - DOMAIN-SUFFIX,app-measurement.com,🌐 Google
+  - DOMAIN-SUFFIX,appspot.com,🌐 Google
+  - DOMAIN-SUFFIX,autodraw.com,🌐 Google
+  - DOMAIN-SUFFIX,beacons.gcp.gvt2.com,🌐 Google
+  - DOMAIN-SUFFIX,beacons.gvt2.com,🌐 Google
+  - DOMAIN-SUFFIX,beacons3.gvt2.com,🌐 Google
+  - DOMAIN-SUFFIX,blogger.com,🌐 Google
+  - DOMAIN-SUFFIX,c.admob.com,🌐 Google
+  - DOMAIN-SUFFIX,c.android.clients.google.com,🌐 Google
+  - DOMAIN-SUFFIX,cache.pack.google.com,🌐 Google
+  - DOMAIN-SUFFIX,capitalg.com,🌐 Google
+  - DOMAIN-SUFFIX,certificate-transparency.org,🌐 Google
+  - DOMAIN-SUFFIX,chrome.com,🌐 Google
+  - DOMAIN-SUFFIX,chromeexperiments.com,🌐 Google
+  - DOMAIN-SUFFIX,chromestatus.com,🌐 Google
+  - DOMAIN-SUFFIX,chromium.org,🌐 Google
+  - DOMAIN-SUFFIX,clickserve.dartsearch.net,🌐 Google
+  - DOMAIN-SUFFIX,corp.google.com,🌐 Google
+  - DOMAIN-SUFFIX,creativelab5.com,🌐 Google
+  - DOMAIN-SUFFIX,crl.pki.goog,🌐 Google
+  - DOMAIN-SUFFIX,debug.com,🌐 Google
+  - DOMAIN-SUFFIX,deepmind.com,🌐 Google
+  - DOMAIN-SUFFIX,dialogflow.com,🌐 Google
+  - DOMAIN-SUFFIX,dl.google.com,🌐 Google
+  - DOMAIN-SUFFIX,dl.l.google.com,🌐 Google
+  - DOMAIN-SUFFIX,docs.google.com,🌐 Google
+  - DOMAIN-SUFFIX,doubleclick.net,🌐 Google
+  - DOMAIN-SUFFIX,drive.google.com,🌐 Google
+  - DOMAIN-SUFFIX,firebase-settings.crashlytics.com,🌐 Google
+  - DOMAIN-SUFFIX,firebaseio.com,🌐 Google
+  - DOMAIN-SUFFIX,getmdl.io,🌐 Google
+  - DOMAIN-SUFFIX,getoutline.org,🌐 Google
+  - DOMAIN-SUFFIX,ggpht.com,🌐 Google
+  - DOMAIN-SUFFIX,gmail.com,🌐 Google
+  - DOMAIN-SUFFIX,gmodules.com,🌐 Google
+  - DOMAIN-SUFFIX,godoc.org,🌐 Google
+  - DOMAIN-SUFFIX,golang.org,🌐 Google
+  - DOMAIN-SUFFIX,google-analytics.com,🌐 Google
+  - DOMAIN-SUFFIX,google.cn,🌐 Google
+  - DOMAIN-SUFFIX,googleadservices.com,🌐 Google
+  - DOMAIN-SUFFIX,googleanalytics.com,🌐 Google
+  - DOMAIN-SUFFIX,googleapis.com,🌐 Google
+  - DOMAIN-SUFFIX,googledrive.com,🌐 Google
+  - DOMAIN-SUFFIX,googlesyndication.com,🌐 Google
+  - DOMAIN-SUFFIX,googletagmanager.com,🌐 Google
+  - DOMAIN-SUFFIX,googletagservices.com,🌐 Google
+  - DOMAIN-SUFFIX,googleusercontent.com,🌐 Google
+  - DOMAIN-SUFFIX,gstatic.com,🌐 Google
+  - DOMAIN-SUFFIX,gtm.oasisfeng.com,🌐 Google
+  - DOMAIN-SUFFIX,gv.com,🌐 Google
+  - DOMAIN-SUFFIX,gvt0.com,🌐 Google
+  - DOMAIN-SUFFIX,gvt1.com,🌐 Google
+  - DOMAIN-SUFFIX,gvt3.com,🌐 Google
+  - DOMAIN-SUFFIX,gwtproject.org,🌐 Google
+  - DOMAIN-SUFFIX,itasoftware.com,🌐 Google
+  - DOMAIN-SUFFIX,madewithcode.com,🌐 Google
+  - DOMAIN-SUFFIX,material.io,🌐 Google
+  - DOMAIN-SUFFIX,mtalk.google.com,🌐 Google
+  - DOMAIN-SUFFIX,ocsp.pki.goog,🌐 Google
+  - DOMAIN-SUFFIX,pagead-googlehosted.l.google.com,🌐 Google
+  - DOMAIN-SUFFIX,pki-goog.l.google.com,🌐 Google
+  - DOMAIN-SUFFIX,polymer-project.org,🌐 Google
+  - DOMAIN-SUFFIX,recaptcha.net,🌐 Google
+  - DOMAIN-SUFFIX,safebrowsing-cache.google.com,🌐 Google
+  - DOMAIN-SUFFIX,settings.crashlytics.com,🌐 Google
+  - DOMAIN-SUFFIX,shattered.io,🌐 Google
+  - DOMAIN-SUFFIX,ssl-google-analytics.l.google.com,🌐 Google
+  - DOMAIN-SUFFIX,synergyse.com,🌐 Google
+  - DOMAIN-SUFFIX,telephony.goog,🌐 Google
+  - DOMAIN-SUFFIX,tensorflow.org,🌐 Google
+  - DOMAIN-SUFFIX,tfhub.dev,🌐 Google
+  - DOMAIN-SUFFIX,tiltbrush.com,🌐 Google
+  - DOMAIN-SUFFIX,toolbarqueries.google.com,🌐 Google
+  - DOMAIN-SUFFIX,tools.google.com,🌐 Google
+  - DOMAIN-SUFFIX,tools.l.google.com,🌐 Google
+  - DOMAIN-SUFFIX,waveprotocol.org,🌐 Google
+  - DOMAIN-SUFFIX,waymo.com,🌐 Google
+  - DOMAIN-SUFFIX,webmproject.org,🌐 Google
+  - DOMAIN-SUFFIX,webrtc.org,🌐 Google
+  - DOMAIN-SUFFIX,whatbrowser.org,🌐 Google
+  - DOMAIN-SUFFIX,widevine.com,🌐 Google
+  - DOMAIN-SUFFIX,www-googletagmanager.l.google.com,🌐 Google
+  - DOMAIN-SUFFIX,x.company,🌐 Google
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🌐 Google
+  - DOMAIN-SUFFIX,youtu.be,🌐 Google
+  - DOMAIN-SUFFIX,yt.be,🌐 Google
+  - DOMAIN-SUFFIX,ytimg.com,🌐 Google
+  - DOMAIN-KEYWORD,blogspot,🌐 Google
+  - DOMAIN-KEYWORD,gmail,🌐 Google
+  - DOMAIN-KEYWORD,google,🌐 Google
+  - DOMAIN-KEYWORD,gstatic,🌐 Google
+  - DOMAIN-KEYWORD,www.google,🌐 Google
+  - IP-CIDR,173.194.0.0/16,🌐 Google
+  - IP-CIDR,74.125.0.0/16,🌐 Google
+  - DOMAIN-SUFFIX,1drv.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,aadrm.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,acompli.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,acompli.net,🖥 Microsoft
+  - DOMAIN-SUFFIX,aka.ms,🖥 Microsoft
+  - DOMAIN-SUFFIX,akadns.net,🖥 Microsoft
+  - DOMAIN-SUFFIX,aspnetcdn.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,assets-yammer.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,azure.cn,🖥 Microsoft
+  - DOMAIN-SUFFIX,azure.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,azure.net,🖥 Microsoft
+  - DOMAIN-SUFFIX,azureedge.net,🖥 Microsoft
+  - DOMAIN-SUFFIX,azurerms.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,bing.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,bing.net,🖥 Microsoft
+  - DOMAIN-SUFFIX,cloudapp.net,🖥 Microsoft
+  - DOMAIN-SUFFIX,cloudappsecurity.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,docs.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,edgesuite.net,🖥 Microsoft
+  - DOMAIN-SUFFIX,fabric.io,🖥 Microsoft
+  - DOMAIN-SUFFIX,gfx.ms,🖥 Microsoft
+  - DOMAIN-SUFFIX,hotmail.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,live.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,live.net,🖥 Microsoft
+  - DOMAIN-SUFFIX,livefilestore.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,lync.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,mesh.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,microsoft-tst.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,microsoft.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,microsoftonline.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,msappproxy.net,🖥 Microsoft
+  - DOMAIN-SUFFIX,msauth.net,🖥 Microsoft
+  - DOMAIN-SUFFIX,msauthimages.net,🖥 Microsoft
+  - DOMAIN-SUFFIX,msecnd.net,🖥 Microsoft
+  - DOMAIN-SUFFIX,msedge.net,🖥 Microsoft
+  - DOMAIN-SUFFIX,msft.net,🖥 Microsoft
+  - DOMAIN-SUFFIX,msftauth.net,🖥 Microsoft
+  - DOMAIN-SUFFIX,msftauthimages.net,🖥 Microsoft
+  - DOMAIN-SUFFIX,msftconnecttest.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,msftidentity.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,msidentity.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,msn.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,msocdn.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,msocsp.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,mstea.ms,🖥 Microsoft
+  - DOMAIN-SUFFIX,o365weve.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,oaspapps.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,office.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,office.net,🖥 Microsoft
+  - DOMAIN-SUFFIX,office365.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,officeppe.net,🖥 Microsoft
+  - DOMAIN-SUFFIX,omniroot.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,onedrive.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,onenote.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,onenote.net,🖥 Microsoft
+  - DOMAIN-SUFFIX,onestore.ms,🖥 Microsoft
+  - DOMAIN-SUFFIX,onmicrosoft.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,outlook.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,outlookgroups.ms,🖥 Microsoft
+  - DOMAIN-SUFFIX,outlookmobile.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,phonefactor.net,🖥 Microsoft
+  - DOMAIN-SUFFIX,public-trust.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,s-microsoft.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,sfbassets.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,sfx.ms,🖥 Microsoft
+  - DOMAIN-SUFFIX,sharepoint.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,sharepointonline.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,skype.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,skypeassets.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,skypeforbusiness.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,spoprod-a.akamaihd.net,🖥 Microsoft
+  - DOMAIN-SUFFIX,staffhub.ms,🖥 Microsoft
+  - DOMAIN-SUFFIX,svc.ms,🖥 Microsoft
+  - DOMAIN-SUFFIX,sway-cdn.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,sway-extensions.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,sway.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,trafficmanager.net,🖥 Microsoft
+  - DOMAIN-SUFFIX,uservoice.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,virtualearth.net,🖥 Microsoft
+  - DOMAIN-SUFFIX,visualstudio.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,windows-ppe.net,🖥 Microsoft
+  - DOMAIN-SUFFIX,windows.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,windows.net,🖥 Microsoft
+  - DOMAIN-SUFFIX,windowsazure.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,windowsupdate.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,wunderlist.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,xbox.cn,🖥 Microsoft
+  - DOMAIN-SUFFIX,xbox.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,xboxlive.cn,🖥 Microsoft
+  - DOMAIN-SUFFIX,xboxlive.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,yammer.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,yammerusercontent.com,🖥 Microsoft
+  - DOMAIN-KEYWORD,1drv,🖥 Microsoft
+  - DOMAIN-KEYWORD,microsoft,🖥 Microsoft
+  - DOMAIN-KEYWORD,onedrive,🖥 Microsoft
+  - DOMAIN-KEYWORD,skydrive,🖥 Microsoft
+  - DOMAIN-SUFFIX,acm.org,🖥 Learning
+  - DOMAIN-SUFFIX,acs.org,🖥 Learning
+  - DOMAIN-SUFFIX,aip.org,🖥 Learning
+  - DOMAIN-SUFFIX,ams.org,🖥 Learning
+  - DOMAIN-SUFFIX,annualreviews.org,🖥 Learning
+  - DOMAIN-SUFFIX,aps.org,🖥 Learning
+  - DOMAIN-SUFFIX,ascelibrary.org,🖥 Learning
+  - DOMAIN-SUFFIX,asm.org,🖥 Learning
+  - DOMAIN-SUFFIX,asme.org,🖥 Learning
+  - DOMAIN-SUFFIX,astm.org,🖥 Learning
+  - DOMAIN-SUFFIX,blackwell-synergy.com,🖥 Learning
+  - DOMAIN-SUFFIX,bmj.com,🖥 Learning
+  - DOMAIN-SUFFIX,cabdirect.org,🖥 Learning
+  - DOMAIN-SUFFIX,cambridge.org,🖥 Learning
+  - DOMAIN-SUFFIX,cas.org,🖥 Learning
+  - DOMAIN-SUFFIX,cell.com,🖥 Learning
+  - DOMAIN-SUFFIX,clarivate.com,🖥 Learning
+  - DOMAIN-SUFFIX,cnki.net,🖥 Learning
+  - DOMAIN-SUFFIX,cqvip.com,🖥 Learning
+  - DOMAIN-SUFFIX,csiro.au,🖥 Learning
+  - DOMAIN-SUFFIX,deepdyve.com,🖥 Learning
+  - DOMAIN-SUFFIX,ebscohost.com,🖥 Learning
+  - DOMAIN-SUFFIX,els-cdn.com,🖥 Learning
+  - DOMAIN-SUFFIX,elsevier.com,🖥 Learning
+  - DOMAIN-SUFFIX,emerald.com,🖥 Learning
+  - DOMAIN-SUFFIX,endnote.com,🖥 Learning
+  - DOMAIN-SUFFIX,engineeringvillage.com,🖥 Learning
+  - DOMAIN-SUFFIX,icevirtuallibrary.com,🖥 Learning
+  - DOMAIN-SUFFIX,ieee.org,🖥 Learning
+  - DOMAIN-SUFFIX,imf.org,🖥 Learning
+  - DOMAIN-SUFFIX,iop.org,🖥 Learning
+  - DOMAIN-SUFFIX,jamanetwork.com,🖥 Learning
+  - DOMAIN-SUFFIX,jbc.org,🖥 Learning
+  - DOMAIN-SUFFIX,jhu.edu,🖥 Learning
+  - DOMAIN-SUFFIX,jstor.org,🖥 Learning
+  - DOMAIN-SUFFIX,karger.com,🖥 Learning
+  - DOMAIN-SUFFIX,libguides.com,🖥 Learning
+  - DOMAIN-SUFFIX,madsrevolution.net,🖥 Learning
+  - DOMAIN-SUFFIX,mdpi.com,🖥 Learning
+  - DOMAIN-SUFFIX,mpg.de,🖥 Learning
+  - DOMAIN-SUFFIX,myilibrary.com,🖥 Learning
+  - DOMAIN-SUFFIX,nature.com,🖥 Learning
+  - DOMAIN-SUFFIX,ncbi.nlm.nih.gov,🖥 Learning
+  - DOMAIN-SUFFIX,oecd-ilibrary.org,🖥 Learning
+  - DOMAIN-SUFFIX,osapublishing.org,🖥 Learning
+  - DOMAIN-SUFFIX,oup.com,🖥 Learning
+  - DOMAIN-SUFFIX,ovid.com,🖥 Learning
+  - DOMAIN-SUFFIX,oxfordartonline.com,🖥 Learning
+  - DOMAIN-SUFFIX,oxfordbibliographies.com,🖥 Learning
+  - DOMAIN-SUFFIX,oxfordmusiconline.com,🖥 Learning
+  - DOMAIN-SUFFIX,pkulaw.com,🖥 Learning
+  - DOMAIN-SUFFIX,pnas.org,🖥 Learning
+  - DOMAIN-SUFFIX,proquest.com,🖥 Learning
+  - DOMAIN-SUFFIX,readcube.com,🖥 Learning
+  - DOMAIN-SUFFIX,researchgate.net,🖥 Learning
+  - DOMAIN-SUFFIX,rsc.org,🖥 Learning
+  - DOMAIN-SUFFIX,sagepub.com,🖥 Learning
+  - DOMAIN-SUFFIX,sci-hub.tw,🖥 Learning
+  - DOMAIN-SUFFIX,sciencedirect.com,🖥 Learning
+  - DOMAIN-SUFFIX,sciencemag.org,🖥 Learning
+  - DOMAIN-SUFFIX,scitation.org,🖥 Learning
+  - DOMAIN-SUFFIX,scopus.com,🖥 Learning
+  - DOMAIN-SUFFIX,siam.org,🖥 Learning
+  - DOMAIN-SUFFIX,spiedigitallibrary.org,🖥 Learning
+  - DOMAIN-SUFFIX,springer.com,🖥 Learning
+  - DOMAIN-SUFFIX,springerlink.com,🖥 Learning
+  - DOMAIN-SUFFIX,tandfonline.com,🖥 Learning
+  - DOMAIN-SUFFIX,un.org,🖥 Learning
+  - DOMAIN-SUFFIX,uni-bielefeld.de,🖥 Learning
+  - DOMAIN-SUFFIX,wanfangdata.com,🖥 Learning
+  - DOMAIN-SUFFIX,webofknowledge.com,🖥 Learning
+  - DOMAIN-SUFFIX,westlaw.com,🖥 Learning
+  - DOMAIN-SUFFIX,westlawchina.com,🖥 Learning
+  - DOMAIN-SUFFIX,wiley.com,🖥 Learning
+  - DOMAIN-SUFFIX,worldbank.org,🖥 Learning
+  - DOMAIN-SUFFIX,worldscientific.com,🖥 Learning
+  - DOMAIN-SUFFIX,pscp.tv,📟 Twitter
+  - DOMAIN-SUFFIX,periscope.tv,📟 Twitter
+  - DOMAIN-SUFFIX,t.co,📟 Twitter
+  - DOMAIN-SUFFIX,twimg.co,📟 Twitter
+  - DOMAIN-SUFFIX,twimg.com,📟 Twitter
+  - DOMAIN-SUFFIX,twitpic.com,📟 Twitter
+  - DOMAIN-SUFFIX,twitter.com,📟 Twitter
+  - DOMAIN-SUFFIX,twitter.jp,📟 Twitter
+  - DOMAIN-SUFFIX,vine.co,📟 Twitter
+  - DOMAIN-SUFFIX,c4assets.com,📺 International-Media
+  - DOMAIN-SUFFIX,channel4.com,📺 International-Media
+  - DOMAIN-SUFFIX,abema.io,📺 International-Media
+  - DOMAIN-SUFFIX,ameba.jp,📺 International-Media
+  - DOMAIN-SUFFIX,hayabusa.io,📺 International-Media
+  - DOMAIN,abematv.akamaized.net,📺 International-Media
+  - DOMAIN,ds-linear-abematv.akamaized.net,📺 International-Media
+  - DOMAIN,ds-vod-abematv.akamaized.net,📺 International-Media
+  - DOMAIN,linear-abematv.akamaized.net,📺 International-Media
+  - DOMAIN-SUFFIX,primevideo.com,📺 International-Media
+  - DOMAIN-SUFFIX,bahamut.com.tw,📺 International-Media
+  - DOMAIN-SUFFIX,gamer.com.tw,📺 International-Media
+  - DOMAIN,gamer-cds.cdn.hinet.net,📺 International-Media
+  - DOMAIN,gamer2-cds.cdn.hinet.net,📺 International-Media
+  - DOMAIN-SUFFIX,bbc.co.uk,📺 International-Media
+  - DOMAIN-SUFFIX,bbci.co.uk,📺 International-Media
+  - DOMAIN-KEYWORD,bbcfmt,📺 International-Media
+  - DOMAIN-KEYWORD,uk-live,📺 International-Media
+  - DOMAIN-SUFFIX,dazn.com,📺 International-Media
+  - DOMAIN-SUFFIX,encoretvb.com,📺 International-Media
+  - DOMAIN,content.jwplatform.com,📺 International-Media
+  - DOMAIN,videos-f.jwpsrv.com,📺 International-Media
+  - DOMAIN-SUFFIX,dashasiafox.akamaized.net,📺 International-Media
+  - DOMAIN-SUFFIX,fox.com,📺 International-Media
+  - DOMAIN-SUFFIX,foxdcg.com,📺 International-Media
+  - DOMAIN-SUFFIX,foxplus.com,📺 International-Media
+  - DOMAIN-SUFFIX,staticasiafox.akamaized.net,📺 International-Media
+  - DOMAIN-SUFFIX,theplatform.com,📺 International-Media
+  - DOMAIN-SUFFIX,uplynk.com,📺 International-Media
+  - DOMAIN-SUFFIX,hbo.com,📺 International-Media
+  - DOMAIN-SUFFIX,hbogo.com,📺 International-Media
+  - DOMAIN-SUFFIX,hboasia.com,📺 International-Media
+  - DOMAIN-SUFFIX,hbogo.com,📺 International-Media
+  - DOMAIN-SUFFIX,hbogoasia.hk,📺 International-Media
+  - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,📺 International-Media
+  - DOMAIN,bcbolthboa-a.akamaihd.net,📺 International-Media
+  - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,📺 International-Media
+  - DOMAIN,manifest.prod.boltdns.net,📺 International-Media
+  - DOMAIN,s3-ap-southeast-1.amazonaws.com,📺 International-Media
+  - DOMAIN-SUFFIX,hulu.com,📺 International-Media
+  - DOMAIN-SUFFIX,huluim.com,📺 International-Media
+  - DOMAIN-SUFFIX,hulustream.com,📺 International-Media
+  - DOMAIN-SUFFIX,kktv.com.tw,📺 International-Media
+  - DOMAIN-SUFFIX,kktv.me,📺 International-Media
+  - DOMAIN,kktv-theater.kk.stream,📺 International-Media
+  - DOMAIN-SUFFIX,linetv.tw,📺 International-Media
+  - DOMAIN,d3c7rimkq79yfu.cloudfront.net,📺 International-Media
+  - DOMAIN-SUFFIX,happyon.jp,📺 International-Media
+  - DOMAIN-SUFFIX,hulu.jp,📺 International-Media
+  - DOMAIN-SUFFIX,litv.tv,📺 International-Media
+  - DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,📺 International-Media
+  - DOMAIN-SUFFIX,mytvsuper.com,📺 International-Media
+  - DOMAIN-SUFFIX,tvb.com,📺 International-Media
+  - DOMAIN-SUFFIX,netflix.com,📺 International-Media
+  - DOMAIN-SUFFIX,netflix.net,📺 International-Media
+  - DOMAIN-SUFFIX,nflxext.com,📺 International-Media
+  - DOMAIN-SUFFIX,nflximg.com,📺 International-Media
+  - DOMAIN-SUFFIX,nflximg.net,📺 International-Media
+  - DOMAIN-SUFFIX,nflxso.net,📺 International-Media
+  - DOMAIN-SUFFIX,nflxvideo.net,📺 International-Media
+  - IP-CIDR,23.246.0.0/18,📺 International-Media
+  - IP-CIDR,37.77.184.0/21,📺 International-Media
+  - IP-CIDR,45.57.0.0/17,📺 International-Media
+  - IP-CIDR,64.120.128.0/17,📺 International-Media
+  - IP-CIDR,66.197.128.0/17,📺 International-Media
+  - IP-CIDR,108.175.32.0/20,📺 International-Media
+  - IP-CIDR,192.173.64.0/18,📺 International-Media
+  - IP-CIDR,198.38.96.0/19,📺 International-Media
+  - IP-CIDR,198.45.48.0/20,📺 International-Media
+  - DOMAIN-SUFFIX,pbs.org,📺 International-Media
+  - DOMAIN-SUFFIX,phncdn.com,📺 International-Media
+  - DOMAIN-SUFFIX,pornhub.com,📺 International-Media
+  - DOMAIN-SUFFIX,pornhubpremium.com,📺 International-Media
+  - DOMAIN-SUFFIX,twitch.tv,📺 International-Media
+  - DOMAIN-SUFFIX,twitchcdn.net,📺 International-Media
+  - DOMAIN-SUFFIX,ttvnw.net,📺 International-Media
+  - DOMAIN-SUFFIX,viu.com,📺 International-Media
+  - DOMAIN-SUFFIX,viu.tv,📺 International-Media
+  - DOMAIN,api.viu.now.com,📺 International-Media
+  - DOMAIN,d1k2us671qcoau.cloudfront.net,📺 International-Media
+  - DOMAIN,d2anahhhmp1ffz.cloudfront.net,📺 International-Media
+  - DOMAIN,dfp6rglgjqszk.cloudfront.net,📺 International-Media
+  - DOMAIN-SUFFIX,googlevideo.com,📺 International-Media
+  - DOMAIN-SUFFIX,youtube.com,📺 International-Media
+  - DOMAIN,youtubei.googleapis.com,📺 International-Media
+  - DOMAIN-SUFFIX,deezer.com,📺 International-Media
+  - DOMAIN-SUFFIX,dzcdn.net,📺 International-Media
+  - DOMAIN-SUFFIX,kkbox.com,📺 International-Media
+  - DOMAIN-SUFFIX,kkbox.com.tw,📺 International-Media
+  - DOMAIN-SUFFIX,kfs.io,📺 International-Media
+  - DOMAIN-SUFFIX,joox.com,📺 International-Media
+  - DOMAIN-SUFFIX,pandora.com,📺 International-Media
+  - DOMAIN-SUFFIX,pscdn.co,📺 International-Media
+  - DOMAIN-SUFFIX,scdn.co,📺 International-Media
+  - DOMAIN-SUFFIX,spotify.com,📺 International-Media
+  - DOMAIN-SUFFIX,spoti.fi,📺 International-Media
+  - IP-CIDR,35.186.224.47/32,📺 International-Media
+  - DOMAIN-SUFFIX,tidal.com,📺 International-Media
+  - GEOIP,CN,DIRECT
+  - MATCH,小江欧巴
