@@ -13,8 +13,13 @@ picom &
 # redshift
 redshift &
 
-
 bspc monitor -d I II III IV V 
+bspc monitor eDP-1-1 -d I II III IV V 
+bspc monitor HDMI-0 -d I II III IV V 
+
+# xrandr -q
+# xrandr --output eDP-1-1 --auto --output HDMI-0 --auto --right-of eDP-1-1
+
 
 bspc config border_width         0
 bspc config window_gap           10
@@ -28,9 +33,11 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc rule -a Goldendict state=floating
-bspc rule -a Rofi state=floating
+bspc config external_rules_command "$HOME/.config/bspwm/scripts/external-rules"
+bspc rule -a goldendict state=floating
 bspc rule -a Nautilus state=floating
+bspc rule -a Rofi state=floating
+
 
 # fish
 # set -U SXHKD_SHELL /user/bin/bash

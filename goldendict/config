@@ -1,10 +1,10 @@
 <config>
  <paths/>
  <sounddirs/>
- <dictionaryOrder name="" id="0">
+ <dictionaryOrder id="0" name="">
   <mutedDictionaries/>
  </dictionaryOrder>
- <inactiveDictionaries name="" id="0">
+ <inactiveDictionaries id="0" name="">
   <mutedDictionaries/>
  </inactiveDictionaries>
  <groups nextId="1"/>
@@ -35,31 +35,31 @@
   <languageCodes></languageCodes>
  </forvo>
  <mediawikis>
-  <mediawiki url="https://en.wikipedia.org/w" icon="" name="English Wikipedia" enabled="1" id="ae6f89aac7151829681b85f035d54e48"/>
-  <mediawiki url="https://en.wiktionary.org/w" icon="" name="English Wiktionary" enabled="0" id="affcf9678e7bfe701c9b071f97eccba3"/>
-  <mediawiki url="https://ru.wikipedia.org/w" icon="" name="Russian Wikipedia" enabled="0" id="8e0c1c2b6821dab8bdba8eb869ca7176"/>
-  <mediawiki url="https://ru.wiktionary.org/w" icon="" name="Russian Wiktionary" enabled="0" id="b09947600ae3902654f8ad4567ae8567"/>
-  <mediawiki url="https://de.wikipedia.org/w" icon="" name="German Wikipedia" enabled="0" id="a8a66331a1242ca2aeb0b4aed361c41d"/>
-  <mediawiki url="https://de.wiktionary.org/w" icon="" name="German Wiktionary" enabled="0" id="21c64bca5ec10ba17ff19f3066bc962a"/>
-  <mediawiki url="https://pt.wikipedia.org/w" icon="" name="Portuguese Wikipedia" enabled="0" id="96957cb2ad73a20c7a1d561fc83c253a"/>
-  <mediawiki url="https://pt.wiktionary.org/w" icon="" name="Portuguese Wiktionary" enabled="0" id="ed4c3929196afdd93cc08b9a903aad6a"/>
-  <mediawiki url="https://el.wikipedia.org/w" icon="" name="Greek Wikipedia" enabled="0" id="f3b4ec8531e52ddf5b10d21e4577a7a2"/>
-  <mediawiki url="https://el.wiktionary.org/w" icon="" name="Greek Wiktionary" enabled="0" id="5d45232075d06e002dea72fe3e137da1"/>
+  <mediawiki id="ae6f89aac7151829681b85f035d54e48" url="https://en.wikipedia.org/w" name="English Wikipedia" enabled="1" icon=""/>
+  <mediawiki id="affcf9678e7bfe701c9b071f97eccba3" url="https://en.wiktionary.org/w" name="English Wiktionary" enabled="0" icon=""/>
+  <mediawiki id="8e0c1c2b6821dab8bdba8eb869ca7176" url="https://ru.wikipedia.org/w" name="Russian Wikipedia" enabled="0" icon=""/>
+  <mediawiki id="b09947600ae3902654f8ad4567ae8567" url="https://ru.wiktionary.org/w" name="Russian Wiktionary" enabled="0" icon=""/>
+  <mediawiki id="a8a66331a1242ca2aeb0b4aed361c41d" url="https://de.wikipedia.org/w" name="German Wikipedia" enabled="0" icon=""/>
+  <mediawiki id="21c64bca5ec10ba17ff19f3066bc962a" url="https://de.wiktionary.org/w" name="German Wiktionary" enabled="0" icon=""/>
+  <mediawiki id="96957cb2ad73a20c7a1d561fc83c253a" url="https://pt.wikipedia.org/w" name="Portuguese Wikipedia" enabled="0" icon=""/>
+  <mediawiki id="ed4c3929196afdd93cc08b9a903aad6a" url="https://pt.wiktionary.org/w" name="Portuguese Wiktionary" enabled="0" icon=""/>
+  <mediawiki id="f3b4ec8531e52ddf5b10d21e4577a7a2" url="https://el.wikipedia.org/w" name="Greek Wikipedia" enabled="0" icon=""/>
+  <mediawiki id="5d45232075d06e002dea72fe3e137da1" url="https://el.wiktionary.org/w" name="Greek Wiktionary" enabled="0" icon=""/>
  </mediawikis>
  <websites>
-  <website url="https://www.google.com/search?q=define:%GDWORD%&amp;hl=en" inside_iframe="0" icon="" name="Google En-En (Oxford)" enabled="0" id="b88cb2898e634c6638df618528284c2d"/>
-  <website url="https://www.urbandictionary.com/define.php?term=%GDWORD%" inside_iframe="0" icon="" name="Urban Dictionary" enabled="0" id="f376365a0de651fd7505e7e5e683aa45"/>
-  <website url="https://multitran.ru/c/m.exe?CL=1&amp;l1=1&amp;s=%GD1251%" inside_iframe="0" icon="" name="Multitran (En)" enabled="0" id="324ca0306187df7511b26d3847f4b07c"/>
-  <website url="http://lingvopro.abbyyonline.com/en/Search/en-ru/%GDWORD%" inside_iframe="0" icon="" name="Lingvo (En-Ru)" enabled="0" id="924db471b105299c82892067c0f10787"/>
-  <website url="http://michaelis.uol.com.br/moderno/ingles/index.php?lingua=portugues-ingles&amp;palavra=%GDISO1%" inside_iframe="0" icon="" name="Michaelis (Pt-En)" enabled="0" id="087a6d65615fb047f4c80eef0a9465db"/>
-  <website url="http://dict.youdao.com/w/eng/%GDWORD%" inside_iframe="1" icon="" name="youdao" enabled="1" id="825d6c56b9f939e023d3396f59b0192c"/>
-  <website url="http://www.iciba.com/word?w=%GDWORD%" inside_iframe="1" icon="" name="jinshan" enabled="1" id="0e2c7785df928fc8712decbed861f8c1"/>
+  <website id="b88cb2898e634c6638df618528284c2d" url="https://www.google.com/search?q=define:%GDWORD%&amp;hl=en" name="Google En-En (Oxford)" enabled="0" icon="" inside_iframe="0"/>
+  <website id="f376365a0de651fd7505e7e5e683aa45" url="https://www.urbandictionary.com/define.php?term=%GDWORD%" name="Urban Dictionary" enabled="0" icon="" inside_iframe="0"/>
+  <website id="324ca0306187df7511b26d3847f4b07c" url="https://multitran.ru/c/m.exe?CL=1&amp;l1=1&amp;s=%GD1251%" name="Multitran (En)" enabled="0" icon="" inside_iframe="0"/>
+  <website id="924db471b105299c82892067c0f10787" url="http://lingvopro.abbyyonline.com/en/Search/en-ru/%GDWORD%" name="Lingvo (En-Ru)" enabled="0" icon="" inside_iframe="0"/>
+  <website id="087a6d65615fb047f4c80eef0a9465db" url="http://michaelis.uol.com.br/moderno/ingles/index.php?lingua=portugues-ingles&amp;palavra=%GDISO1%" name="Michaelis (Pt-En)" enabled="0" icon="" inside_iframe="0"/>
+  <website id="825d6c56b9f939e023d3396f59b0192c" url="http://dict.youdao.com/w/eng/%GDWORD%" name="youdao" enabled="1" icon="" inside_iframe="1"/>
+  <website id="0e2c7785df928fc8712decbed861f8c1" url="http://www.iciba.com/word?w=%GDWORD%" name="jinshan" enabled="1" icon="" inside_iframe="1"/>
  </websites>
  <dictservers/>
  <programs>
-  <program type="0" commandLine="festival --tts" icon="" name="Festival" enabled="0" id="428b4c2b905ef568a43d9a16f59559b0"/>
-  <program type="0" commandLine="espeak %GDWORD%" icon="" name="Espeak" enabled="0" id="2cf8b3a60f27e1ac812de0b57c148340"/>
-  <program type="2" commandLine="man -a --html=/bin/cat %GDWORD%" icon="" name="Manpages" enabled="0" id="4f898f7582596cea518c6b0bfdceb8b3"/>
+  <program id="428b4c2b905ef568a43d9a16f59559b0" name="Festival" enabled="0" type="0" icon="" commandLine="festival --tts"/>
+  <program id="2cf8b3a60f27e1ac812de0b57c148340" name="Espeak" enabled="0" type="0" icon="" commandLine="espeak %GDWORD%"/>
+  <program id="4f898f7582596cea518c6b0bfdceb8b3" name="Manpages" enabled="0" type="2" icon="" commandLine="man -a --html=/bin/cat %GDWORD%"/>
  </programs>
  <voiceEngines/>
  <mutedDictionaries>
@@ -158,11 +158,11 @@
  <lastMainGroupId>0</lastMainGroupId>
  <lastPopupGroupId>0</lastPopupGroupId>
  <popupWindowState>AAAA/wAAAAH9AAAAAAAAAAAAAAAAAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAQAAAAEAAAAaAGQAaQBjAHQAaQBvAG4AYQByAHkAQgBhAHIDAAAAAP////8AAAAAAAAAAA==</popupWindowState>
- <popupWindowGeometry>AdnQywADAAAAAAAAAAAAFAAAAiwAAAGmAAAAAAAAABQAAAIsAAABpgAAAAAAAAAAB4AAAAAAAAAAFAAAAiwAAAGm</popupWindowGeometry>
+ <popupWindowGeometry>AdnQywADAAAAAAeAAAAAFAAACawAAAGmAAAHgAAAABQAAAmsAAABpgAAAAAAAAAAB4AAAAeAAAAAFAAACawAAAGm</popupWindowGeometry>
  <pinPopupWindow>0</pinPopupWindow>
  <popupWindowAlwaysOnTop>1</popupWindowAlwaysOnTop>
- <mainWindowState>AAAA/wAAAAH9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAAAP////8AAACJAP///wAAAAEAAADMAAADufwCAAAAA/sAAAASAGQAaQBjAHQAcwBQAGEAbgBlAQAAAD0AAAE7AAAAYwD////7AAAAGgBmAGEAdgBvAHIAaQB0AGUAcwBQAGEAbgBlAQAAAX4AAAE3AAAAYwD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUBAAACuwAAATsAAABjAP///wAABpoAAAO5AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAIe/////wAAAAAAAAAA</mainWindowState>
- <mainWindowGeometry>AdnQywADAAAAAAAKAAAAOAAAB3UAAAQtAAAACgAAADgAAAd1AAAELQAAAAAAAAAAB4AAAAAKAAAAOAAAB3UAAAQt</mainWindowGeometry>
+ <mainWindowState>AAAA/wAAAAH9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAAAP////8AAACJAP///wAAAAEAAADMAAADufwCAAAAA/sAAAASAGQAaQBjAHQAcwBQAGEAbgBlAQAAAD0AAAE7AAAAYwD////7AAAAGgBmAGEAdgBvAHIAaQB0AGUAcwBQAGEAbgBlAQAAAX4AAAE3AAAAYwD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUBAAACuwAAATsAAABjAP///wAAArkAAAO5AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAIe/////wAAAAAAAAAA</mainWindowState>
+ <mainWindowGeometry>AdnQywADAAAAAAtrAAAAOAAADvUAAAQtAAALawAAADgAAA71AAAELQAAAAAAAAAAB4AAAAtrAAAAOAAADvUAAAQt</mainWindowGeometry>
  <helpWindowGeometry></helpWindowGeometry>
  <helpSplitterState></helpSplitterState>
  <dictInfoGeometry></dictInfoGeometry>
