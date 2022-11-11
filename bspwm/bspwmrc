@@ -3,7 +3,7 @@
 # sxhkd
 pgrep -x sxhkd > /dev/null || sxhkd &
 # eww
-eww daemon &
+# eww daemon &
 # polybar
 polybar &
 # feh
@@ -33,7 +33,6 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc config external_rules_command "$HOME/.config/bspwm/scripts/external-rules"
 bspc rule -a goldendict state=floating
 bspc rule -a Nautilus state=floating
 bspc rule -a Rofi state=floating
