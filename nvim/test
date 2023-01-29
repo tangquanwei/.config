@@ -1,0 +1,16 @@
+lua require("plugins.plugins-setup")
+
+
+lua require("core.options")
+lua require("core.keymaps")
+
+" 插件
+lua require("plugins.lualine")
+lua require("plugins/nvim-tree")
+lua require("plugins/treesitter")
+lua require("plugins/lsp")
+lua require("plugins/cmp")
+lua require("plugins/comment")
+lua require("plugins/autopairs")
+lua require("plugins/bufferline")
+lua require("plugins/gitsigns")
