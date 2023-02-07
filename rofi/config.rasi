@@ -116,3 +116,4 @@ button selected {
   text-color: @bg-col;
   border-radius: 10px;
 }
+@theme "/home/quanwei/.local/share/rofi/themes/launchpad.rasi"
