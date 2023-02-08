@@ -17,6 +17,8 @@ dunst &
 # touchpad
 libinput-gestures-setup start  
 
+copyq --start-server
+
 bspc monitor -d I II III IV V 
 bspc monitor eDP-1-1 -d I II III IV V 
 bspc monitor HDMI-0 -d I II III IV V 
@@ -48,4 +50,4 @@ bspc rule -a Rofi state=floating
 
 # Java
 wmname LG3D
-copyq --start-server
+
